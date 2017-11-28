@@ -1,0 +1,172 @@
+/***** GLOBAL STYLES *****/
+body {
+  font-family: 'Roboto', 'Arial', sans-serif;
+  background-color: #fff;
+}
+
+h1 {
+  font-size: 2.25rem;
+  line-height: 2.25rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.175rem;
+}
+
+h4 {
+  font-size: 1.125rem;
+}
+
+h5 {
+  font-size: .9rem;
+  line-height: 1rem;
+}
+
+h6 {
+  font-size: .725rem;
+  line-height: 1rem;
+}
+
+
+
+/***** MODIFICATION CLASSES *****/
+.black {
+  color: #000000;
+}
+
+.blue {
+  color: #000000;
+}
+
+.grey1 {
+  color: #6D6D6D;
+}
+
+.grey2 {
+  color: #999999;
+}
+
+.grey3 {
+  color: #CDCDCD;
+}
+
+.t400 {
+  font-weight: 400;
+}
+
+
+/***** NAVIGATION *****/
+nav .navwrap {
+  padding: 10px;
+  display: block;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  white-space: nowrap;
+  box-shadow: 0px 1px 10px #cdcdcd;
+  height: 60px;
+  background-color: #fff;
+}
+
+nav .navwrap a {
+  display: inline-block;
+  color: #1A3E89;
+}
+
+nav .navright {
+  float:right;
+  text-align: right;
+  color: #1A3E89;
+  z-index: 2;
+}
+
+nav .navright h3 {
+  font-weight: 700;
+  line-height: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  vertical-align: text-bottom;
+  display: block;
+  font-weight: 400;
+  padding-top: 10px;
+}
+
+nav ul li {
+  display: inline-block;
+  padding-left: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: .9rem;
+  line-height: .6rem;
+}
+
+nav .navwrap a img {
+  height: 40px;
+}
+
+
+
+/***** BODY *****/
+.container {
+  margin:0 auto;
+  padding-top: 60px;
+}
+
+
+
+/***** HERO CELL *****/
+#hero {
+  background-image: url(../assets/images/hero-background_mob.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 270px;
+  text-align: center;
+  color: #1A3E89;
+}
+
+#hero h2 {
+  padding-top: 80px;
+  padding-bottom: 5px;
+}
+
+#hero h6 {
+  font-weight: 400;
+  padding-top: 5px;
+}
+
+/***** CONTENT CONTAINER *****/
+.content-container {
+  box-sizing: border-box;
+  padding:0 15px;
+  background-image: url(../assets/images/content-background.jpg);
+  background-size: contain;
+  height: 500px;
+}
+
+
+
+/***** ABOUT ME CELL *****/
+#about {
+
+}
+
+
+
+
+/***** RESPONSIVE STYLES *****/
+/***** 768px | 1024px *****/
+
+
+@media screen and (min-width: 768px) {
+
+
+
+}
