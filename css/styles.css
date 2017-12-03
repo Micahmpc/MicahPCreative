@@ -69,6 +69,7 @@ nav .navwrap {
   padding: 10px;
   display: block;
   position: fixed;
+  z-index: 1000;
   width: 100%;
   box-sizing: border-box;
   white-space: nowrap;
@@ -150,10 +151,9 @@ nav .navwrap a img {
 /***** CONTENT CONTAINER *****/
 .content-container {
   box-sizing: border-box;
-  padding:0 15px;
-  background-image: url(../assets/images/_homepage/content-background.jpg);
-  background-size: contain;
-  height: 500px;
+  padding:0 15px 15px;
+  background-image: url(../assets/images/_homepage/content-background_mob.jpg);
+  background-size: cover;
 }
 
 
@@ -162,8 +162,7 @@ nav .navwrap a img {
 .aboutcell {
   width: 100%;
   box-sizing: border-box;
-  padding: 10px;
-  margin: 40px 0;
+  margin: 60px 0;
   overflow: hidden;
   height: 205px;
 }
@@ -190,7 +189,14 @@ nav .navwrap a img {
 .readmore-bottom {
   text-align: center;
     position: relative;
-    padding: 10px 0;
+    margin-top: 5px;
+    padding: 15px 0;
+    z-index: 1;
+    background: rgb(255,255,255); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(255,255,255,0.375) 0%, rgba(255,255,255,0.75) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0.375) 0%,rgba(255,255,255,0.75) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255,255,255,0.375) 0%,rgba(255,255,255,0.75) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+, Opera12+, Safari7+ */
+    box-shadow: 0px 1px 7px #cdcdcd;
 }
 
 .readmore-bottom i, .readmore-bottom h5 {
@@ -236,6 +242,53 @@ nav .navwrap a img {
   font-weight: 400;
   line-height: 1.25rem;
 }
+
+
+/***** CONTACT *****/
+#contact {
+  background-color: #1a3e89;
+  color: #fff;
+}
+
+#contact a {
+  color: #fff;
+  text-decoration: none;
+}
+
+section#contact h2 {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.social_links {
+  text-align: center;
+}
+
+.social_links a i.fa {
+  font-size: 35px;
+  padding:0 25px 20px;
+}
+
+.contact_direct {
+  text-align: center;
+}
+
+.contact_direct a {
+  display: block;
+  padding-bottom: 15px !important;
+}
+
+.contact_direct a i.fa {
+  padding-right: 10px;
+}
+
+.contact_direct a:last-child {
+  padding-bottom: 20px !important;
+}
+
+
+
+
 
 
 /***** RESPONSIVE STYLES *****/
