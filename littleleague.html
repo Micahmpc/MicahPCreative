@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Micah Parker - UX | UI | Visual | Development | Branding</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,400i,700,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/portfoliopages.css">
+  </head>
+<body>
+  <nav id="top">
+    <div class="navwrap">
+      <a href="index.html">
+        <img src="assets/images/_homepage/mp-logo.svg" alt="@micahmpc">
+      </a>
+      <div class="navright">
+        <h3>Micah Parker <span class="grey1 t400">//</span> <span class="grey2 t400">Designer</span></h3>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="portfolio_content">
+      <section class="hero" style="background: url(assets/images/pages/littleleague/littleleague_hero.jpg);">
+        <div class="title">
+          <h2>Little League / Russell Athletic</h2>
+          <h5 class="slab"><i>e</i>-Commerce that gives back</h5>
+        </div>
+      </section>
+      <section class="content">
+        <p>Prep Sportswear formed a manufacturing partnership with Little League of America and Russell Athletic to form a centralized platform that would provide Little League fans with custom merchandise, team and league data housing, and the ability to fundraise through sales. As the current website was inundated with tech debt, we decided to use this as an opportunity to replatform and rebuild from the ground up. The old website be rolled over once the new site was built and battle tested. My role as primary front-end UI developer put me as the middle man between the design and development teams within the company.</p>
+        <img src="assets/images/pages/littleleague/ys_homepage.jpg" alt="Youth Sports Homepage">
+        <p>One big challenge we tackled was the user flow of the site. We needed to remove multiple steps and improve the search functionality from the old platform, which took 4+ steps just to get to a product page, and saw considerable drop-out rates. We achieved this in 2 ways. The first was streamlining the steps to finding the users' respective team store, so they could navigate in and start shopping. So we made the landing page for the channel the team list page, with a functional meta-tag based search. The second was building the IA in such a way that we could actually have the user start "designing" the product in the product-list page. We achieved this by creating mappings within the filter functionality of that list page, so the user could choose their size, color, and product (among other filtering options) before clicking into the individual products' page, where all the user had to do was choose the design if they didn't like the default, and go to checkout.</p>
+        <img src="assets/images/pages/littleleague/ys_league_desk.jpg" alt="Youth Sports Store Home">
+        <img src="assets/images/pages/littleleague/ys_product_desk.jpg" alt="Youth Sports Product Page">
+        <p>We also changed the way we approached the design selection on the product list page. It was previously a scrollable tile view of 12 designs at a time, with a ton of controls and customizations the user could do, however research showed that a lot of customers were confused as to what the controls did. Some users didn't even realize you could add these customizations at all. We used color maps and wireframes to work through designing the page to feature as few controls as possible. Any field that didn't apply to the currently selected design, would not be shown.</p>
+        <img src="assets/images/pages/littleleague/ys_design_desk.jpg" alt="Youth Sports Design Page">
+        <p>The other half of this project was a fundraising site for the individual teams/leagues featured on the site. Users could come set up a fundraising account for their team, where they got proceeds from all sales within their teams store which could be either sent as a check or account deposit, or re-applied to future orders on the e-commerce site. I built the fundraising site using the same grid and style attributes as the e-commerce site. The reason being we wanted to create a cohesive brand that created familiarity between the sites, which were heavily Little League branded. Creating this cohesion visually put emphasis on the fact that both sites were housed under the Prep Sportswear brand or engine. We built a homepage that told the story and the features of the fundraising site, informing users of the benefits and how-to's of the site.</p>
+        <img src="assets/images/pages/littleleague/fundraising_desk.jpg" alt="Fundraising Homepage">
+        <p>As the UI developer on this project, I worked very closely with the UI designer and my back-end team in figuring out branding, user paths and features. We rebuilt the filtering system to be dynamic, and allow the user to design their product essentially in the product list page. Since every product featured multiple color options, design options, sizes, etc., we wanted the user to be able to go into the shopping experience with a certain thing in mind already, and get there quickly. Creating a system that allowed you to pick color, size, and product type (and subsequent product) on the list page, made it so once the user clicked on the product in that page, they could be dropped into an immediate add-to-cart situation if the user felt satisfied with their choices.<br><br>
+
+        Another major challenge on the project which played a big part was the information architecture and the creation of schema's. I served as the consultant for most of these. Some of the things we addressed were the mapping of colors, and how changing a design or product color would affect the other colors. We had to do this with both the Pantone system and our internal spot colors working together, both for Little League, and with the college and other licensed channels in mind for future migration to the new platform. The key I found was again simplicity. Dumbing the system down from its prior state which used an extremely complicated set of rules and algorithms that converted spot colors to lab, and then output to CMYK and RGB (for manufacturing and web views, respectively), improved mapping and increase design contrast, as well as removing hundreds of lines of code that could cause system errors for outlier cases.<br><br>
+
+        I was partly responsible for crafting the information architecture for designs and dynamic field mapping in the designs as well. To explain further, each text field (and some graphical elements) in every design was dynamic and would display pieces of team information as selected by either the set up of the design (internally) or by the user (externally, e.g. "first baseman" or "team mom", so the user could choose their position, the year or jersey name, etc.). My role was to guide the data engineers and back-end programmers through the interactions of how these fields mapped to certain data within the teams stored data, how the user would interact with certain dynamic fields (like the one described above), and how the stored data and user-input data interacted with each other.<br><br>
+
+        I also created, maintained and oversaw the brand identity and style guide. Although not actually using the atomic system for the style guide due to lack of internal partner expertise in setting up the system, I chose to build it in an atomic fashion, defining first the atom level elements like colors, fonts, iconography, then using those to define the molecules (buttons, forms, etc.), organisms, and so on.<br><br>
+
+        The end result exhibited the 2 sites (e-commerce and fundraising) with matching grid systems, interactions, user flows in shared processes, etc. that created the overall branded feel. We built a simple system that separated each piece of data making an easily maintainable platform. One thing we lacked in this project due to time constraints was rounds of external user research prior to release. Instead we did all company showcases along the way, and iterated from this feedback as we went so we could continue moving forward.</p>
+
+      </section>
+
+
+
+
+    </div>
+
+
+
+
+<!-- GLOBAL CONTENT  -->
+    <section id="contact">
+      <h2><span style="font-weight:400;">Like what you see?</span>
+        <br>Drop me a line</h2>
+      <div class="social_links">
+        <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      </div>
+      <div class="contact_direct">
+        <a href="#"><i class="fa fa-mobile-phone" aria-hidden="true"></i>206.948.9644</a>
+        <a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i>micah.mpc@gmail.com</a>
+      </div>
+    </section>
+
+    <footer>
+      <img src="assets/images/_homepage/mp-logo.svg" alt="@micahmpc">
+      <h6>© Copyright Micah Parker 2017. All Rights Reserved</h6>
+    </footer>
+  </div>
+</body>
+</html>
