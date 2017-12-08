@@ -134,7 +134,7 @@ nav .navwrap a img {
 
 /***** HERO CELL *****/
 #hero {
-  background-image: url(../assets/images/_homepage/hero-background_mob.jpg);
+  background-image: url(../assets/images/homepage/hero-background_mob.jpg);
   background-position: center;
   background-size: cover;
   height: 270px;
