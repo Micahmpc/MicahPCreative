@@ -164,20 +164,23 @@ nav .navwrap a img {
 .aboutcell {
   width: 100%;
   box-sizing: border-box;
-  margin: 60px 0 0;
+  padding: 30px 0 0;
   overflow: hidden;
+  background-image: url(../assets/images/homepage/content-background_desk.png);
+  background-size: cover;
+  color: #fff;
 }
 
 .aboutcell img {
   width: 105px;
   float: left;
   padding: 0 20px;
+  border-radius: 100%;
 }
 
 .aboutcell p {
   height: 146px;
   line-height: 1.125rem;
-  color: #1a3e89;
   overflow: hidden;
   padding-right: 20px;
 }
@@ -186,23 +189,19 @@ nav .navwrap a img {
   font-weight: 700;
   font-size: 1.125rem;
   line-height: 1rem;
+  color: #cdcdcd;
 }
 
 .readmore-bottom {
   text-align: center;
-    position: relative;
-    margin-top: 5px;
-    padding: 15px 0 60px;
-    z-index: 1;
-    background: rgb(255,255,255); /* Old browsers */
-    background: -moz-linear-gradient(top, rgba(255,255,255,0.375) 0%, rgba(255,255,255,0.75) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(255,255,255,0.375) 0%,rgba(255,255,255,0.75) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(255,255,255,0.375) 0%,rgba(255,255,255,0.75) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+, Opera12+, Safari7+ */
+  position: relative;
+  padding: 30px 0;
+  z-index: 1;
+  color: #cdcdcd;
 }
 
 .readmore-bottom i, .readmore-bottom h5 {
   display: inline-block;
-  color: #1a3e89;
 }
 
 .readmore-bottom i {
@@ -210,6 +209,13 @@ nav .navwrap a img {
   padding-right: 10px;
   position: relative;
   top: -2px;
+}
+
+
+/* PORTFOLIO */
+
+#work {
+  font-size: 0;
 }
 
 #work a {
@@ -223,15 +229,11 @@ nav .navwrap a img {
 }
 
 .workcell .workcell-title {
-  background-color: #1a3e89;
-  color: #fff;
+  background-color: rgba(0,0,0,.85);
+  color: #ffffff;
   box-sizing: border-box;
   padding: 10px 20px;
   position: relative;
-  top: 75px;
-  left: -5px;
-  width: 85%;
-  box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.5);
 }
 
 .workcell .workcell-title h3 {
@@ -242,6 +244,7 @@ nav .navwrap a img {
   padding-bottom: 10px;
   font-weight: 400;
   line-height: 1.25rem;
+  color: #999999;
 }
 
 
@@ -251,7 +254,6 @@ nav .navwrap a img {
   padding: 30px;
   background-color: #1a3e89;
   color: #999999;
-  height: 400px;
 }
 
 #testimonials p {
@@ -365,6 +367,55 @@ footer h6 {
 
 
 @media screen and (min-width: 768px) {
+
+/* PORTFOLIO */
+.content-container {
+  margin: 0 auto;
+}
+
+  #work, #about {
+    margin: 0 auto;
+
+  }
+
+  .workcell {
+    width: 50%;
+    display: inline-block;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+  }
+
+  .workcell .workcell-title {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: none;
+  }
+
+/* TESTIMONIALS */
+#testimonials {
+  text-align: center;
+  padding: 40px;
+  display: inline-block;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+#testimonials p {
+  padding: 20px 40px;
+}
+
+/* CONTACT */
+#contact {
+  display: inline-block;
+  width: 49%;
+  vertical-align: text-bottom;
+}
+
 
 
 
