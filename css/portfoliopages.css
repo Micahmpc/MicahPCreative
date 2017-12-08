@@ -33,3 +33,13 @@
   align-content: center;
   border-bottom: 5px solid #fff;
 }
+
+.portfolio_content section.content p a {
+  color: #1A3E89;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.portfolio_content section.content p a:hover {
+  color: #6d6d6d;
+}
