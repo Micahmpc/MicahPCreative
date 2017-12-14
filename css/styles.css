@@ -5,12 +5,12 @@ body {
 }
 
 h1 {
-  font-size: 2.25rem;
-  line-height: 2.25rem;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
 }
 
 h3 {
@@ -27,12 +27,12 @@ h5 {
 }
 
 h6 {
-  font-size: .725rem;
+  font-size: .9rem;
   line-height: 1rem;
 }
 
 p {
-  font-size: .9rem;
+  font-size: .8rem;
   line-height: 1.1rem;
 }
 
@@ -144,7 +144,6 @@ nav .navwrap a img {
 
 #hero h2 {
   padding-top: 80px;
-  padding-bottom: 5px;
 }
 
 #hero h6 {
@@ -259,7 +258,7 @@ nav .navwrap a img {
 #testimonials p {
   text-align: center;
   padding: 15px;
-  line-height: normal;
+  line-height: 1.4rem;
   color: #fff;
 }
 
@@ -368,6 +367,86 @@ footer h6 {
 
 @media screen and (min-width: 768px) {
 
+/* GLOBAL */
+h1 {
+  font-size: 5rem;
+  line-height: 5rem;
+}
+
+h2 {
+  font-size: 3.25rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+  line-height: 2rem;
+}
+
+h4 {
+  font-size: 1.75rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+  line-height: 1rem;
+}
+
+h6 {
+  font-size: 1.25rem;
+  line-height: 1rem;
+}
+
+p {
+  font-size: 1.075rem;
+}
+
+
+
+.container {
+  padding-top: 90px;
+}
+
+nav .navwrap {
+  height: 90px;
+  padding: 15px 20px;
+}
+
+nav .navwrap a img {
+  height: 60px;
+}
+
+nav .navright h3 {
+  line-height: 2rem;
+  font-size: 2rem;
+}
+
+nav ul {
+  padding-top: 15px;
+}
+
+nav a {
+  font-size: 1.25rem;
+}
+
+/* HERO */
+#hero {
+  background-image: url(../assets/images/homepage/hero-background.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+  text-align: center;
+  color: #1A3E89;
+}
+
+#hero h2 {
+  padding-top: 160px;
+}
+
+#hero h6 {
+  font-weight: 400;
+  padding-top: 25px;
+}
+
 /* PORTFOLIO */
 .content-container {
   margin: 0 auto;
@@ -414,6 +493,10 @@ footer h6 {
   display: inline-block;
   width: 49%;
   vertical-align: text-bottom;
+}
+
+section#contact h2 {
+  line-height: 3rem;
 }
 
 
