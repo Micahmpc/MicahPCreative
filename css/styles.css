@@ -67,10 +67,15 @@ p {
   font-family: 'Roboto Slab', 'Times', serif;
 }
 
+.center {
+  text-align: center;
+  margin: 0 auto;
+}
+
 
 /***** NAVIGATION *****/
 nav .navwrap {
-  padding: 10px;
+  padding: 10px 20px;
   display: block;
   position: fixed;
   z-index: 1000;
@@ -85,6 +90,11 @@ nav .navwrap {
 nav .navwrap a {
   display: inline-block;
   color: #1A3E89;
+}
+
+nav .navwrap a:hover {
+  color: #999;
+  transition: .125s ease-out;
 }
 
 nav .navright {
@@ -142,6 +152,10 @@ nav .navwrap a img {
   color: #1A3E89;
 }
 
+#hero h1, #hero h5 {
+  text-shadow: 1px 2px 4px #fff;
+}
+
 #hero h2 {
   padding-top: 80px;
 }
@@ -160,13 +174,18 @@ nav .navwrap a img {
 
 
 /***** ABOUT ME CELL *****/
-.aboutcell {
+#about {
+  background-image: url(../assets/images/homepage/content-background_desk.png);
+  background-size: cover;
   width: 100%;
+  border-bottom: 5px solid #fff;
+}
+
+.aboutcell {
+
   box-sizing: border-box;
   padding: 30px 0 0;
   overflow: hidden;
-  background-image: url(../assets/images/homepage/content-background_desk.png);
-  background-size: cover;
   color: #fff;
 }
 
@@ -225,6 +244,9 @@ nav .navwrap a img {
   background-size: cover;
   height: 250px;
   border-bottom:5px solid #fff;
+  display: inline-flex;
+  justify-content: flex-end;
+  flex-direction: column;
 }
 
 .workcell .workcell-title {
@@ -232,11 +254,12 @@ nav .navwrap a img {
   color: #ffffff;
   box-sizing: border-box;
   padding: 10px 20px;
-  position: relative;
+
 }
 
 .workcell .workcell-title h3 {
   padding-bottom: 10px;
+  font-family: 'Roboto Slab', 'Times', serif;
 }
 
 .workcell .workcell-title h5 {
@@ -260,6 +283,7 @@ nav .navwrap a img {
   padding: 15px;
   line-height: 1.4rem;
   color: #fff;
+  font-style: italic;
 }
 
 #testimonials h5, #testimonials h6 {
@@ -378,7 +402,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   line-height: 2rem;
 }
 
@@ -388,7 +412,7 @@ h4 {
 
 h5 {
   font-size: 1.5rem;
-  line-height: 1rem;
+  line-height: 1.5rem;
 }
 
 h6 {
@@ -440,6 +464,7 @@ nav a {
 
 #hero h2 {
   padding-top: 160px;
+  padding-bottom: 10px;
 }
 
 #hero h6 {
@@ -457,15 +482,22 @@ nav a {
 
   }
 
+  .aboutcell {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+
   .workcell {
     width: 50%;
-    display: inline-block;
     border: 0;
     margin: 0;
     padding: 0;
-    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-    box-sizing: border-box;         /* Opera/IE 8+ */
+    filter: grayscale(75%);
+  }
+
+  .workcell:hover {
+    filter: grayscale(0%);
+    transition: .4s ease-out;
   }
 
   .workcell .workcell-title {
@@ -474,6 +506,12 @@ nav a {
     width: 100%;
     box-shadow: none;
   }
+
+  .workcell .workcell-title h5 {
+    font-size: 1.125rem;
+  }
+
+
 
 /* TESTIMONIALS */
 #testimonials {
@@ -496,10 +534,35 @@ nav a {
 }
 
 section#contact h2 {
-  line-height: 3rem;
+  line-height: 3.5rem;
+}
+
+footer h6 {
+  font-size: .9rem;
+}
+
 }
 
 
 
+@media screen and (min-width: 1440px) {
+
+  #work {
+    text-align: center;
+    background-color: #cdcdcd;
+  }
+
+  .workcell {
+    width: 33.3333%;
+    text-align: left;
+  }
+
+  .workcell .workcell-title h3 {
+    font-size: 1.25rem;
+  }
+
+  .workcell .workcell-title h5 {
+    font-size: .9rem;
+  }
 
 }

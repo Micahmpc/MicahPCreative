@@ -52,6 +52,40 @@ section#contact {
   text-align: left;
 }
 
+.portfolio_content section.content p a {
+  color: #1a3e89;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.portfolio_content section.content p a:hover {
+  color: #999;
+}
+
+.portfolio_content section.content ul {
+  color: #6d6d6d;
+  width: 75%;
+  margin: 15px auto;
+  line-height: 1.5rem;
+  font-size: .8rem;
+}
+
+.portfolio_content section.content ul li {
+  list-style: none;
+  padding-bottom: 15px;
+}
+
+.portfolio_content section.content ul li::before {
+  color: #1a3e89;
+  content: "■";
+  padding-right: 1.5rem;
+  position: relative;
+  top: -3px;
+
+}
+
+
+
 .portfolio_content section.content h5.quotable {
   font-style: italic;
   width: 75%;
@@ -90,6 +124,8 @@ display: block;
 .portfolio_content section.content h6:last-of-type {
 text-align: center;
 padding: 30px 0 70px;
+display: block;
+font-size: 1.5rem;
 }
 
 .portfolio_content section.content h6 a {
@@ -138,8 +174,6 @@ padding: 30px 0 70px;
 
   .portfolio_content section.content p a {
     text-align: center;
-    display: block;
-    font-size: 1.5rem;
     padding: 20px 0;
   }
 
