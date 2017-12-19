@@ -175,8 +175,8 @@ nav .navwrap a img {
 
 /***** ABOUT ME CELL *****/
 #about {
-  background-image: url(../assets/images/homepage/content-background_desk.png);
   background-size: cover;
+  background-image: url(../assets/images/homepage/content-background_desk.jpg);
   width: 100%;
   border-bottom: 5px solid #fff;
 }
@@ -186,7 +186,7 @@ nav .navwrap a img {
   box-sizing: border-box;
   padding: 30px 0 0;
   overflow: hidden;
-  color: #fff;
+  color: #6d6d6d;
 }
 
 .aboutcell img {
@@ -207,7 +207,7 @@ nav .navwrap a img {
   font-weight: 700;
   font-size: 1.125rem;
   line-height: 1rem;
-  color: #cdcdcd;
+  color: #6d6d6d;
 }
 
 .readmore-bottom {
@@ -215,7 +215,7 @@ nav .navwrap a img {
   position: relative;
   padding: 30px 0;
   z-index: 1;
-  color: #cdcdcd;
+  color: #1a3e89;
 }
 
 .readmore-bottom i, .readmore-bottom h5 {
@@ -293,11 +293,14 @@ nav .navwrap a img {
 #testimonials h5 {
   margin-top: 25px;
   padding-bottom: 5px;
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 #testimonials h6 {
   margin-bottom: 15px;
   font-weight: 300;
+  font-size: .8rem;
 }
 
 
