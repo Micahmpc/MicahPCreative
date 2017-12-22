@@ -119,7 +119,7 @@ nav ul {
 
 nav ul li {
   display: inline-block;
-  padding-left: 30px;
+  padding-left: 20px;
 }
 
 nav a {
@@ -175,65 +175,67 @@ nav .navwrap a img {
 
 /***** ABOUT ME CELL *****/
 #about {
-  background-size: cover;
-  background-image: url(../assets/images/homepage/content-background_desk.jpg);
   width: 100%;
   border-bottom: 5px solid #fff;
+text-align: center;
 }
 
 .aboutcell {
-
   box-sizing: border-box;
-  padding: 30px 0 0;
-  overflow: hidden;
+  padding: 50px 0 30px;
   color: #6d6d6d;
+    display: inline-flex;
+    margin: 0 auto;
 }
 
 .aboutcell img {
   width: 105px;
-  float: left;
   padding: 0 20px;
   border-radius: 100%;
 }
 
+
 .aboutcell p {
-  height: 146px;
   line-height: 1.125rem;
   overflow: hidden;
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+.aboutcell .aboutright {
   padding-right: 20px;
+}
+
+.aboutcell .aboutbottom {
+  text-align: left;
+}
+
+.aboutcell a {
+  margin: 0 auto;
+  font-size: 1rem;
+  color: #1a3e89;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.aboutcell a:first-of-type {
+  padding-right: 15px;
+  border-right: 1px solid #1a3e89;
+  margin-right: 15px;
 }
 
 .aboutcell .abouttitle {
   font-weight: 700;
-  font-size: 1.125rem;
+  font-size: 1.375rem;
   line-height: 1rem;
   color: #6d6d6d;
 }
-
-.readmore-bottom {
-  text-align: center;
-  position: relative;
-  padding: 30px 0;
-  z-index: 1;
-  color: #1a3e89;
-}
-
-.readmore-bottom i, .readmore-bottom h5 {
-  display: inline-block;
-}
-
-.readmore-bottom i {
-  font-size: .7rem;
-  padding-right: 10px;
-  position: relative;
-  top: -2px;
-}
-
 
 /* PORTFOLIO */
 
 #work {
   font-size: 0;
+
 }
 
 #work a {
@@ -242,11 +244,12 @@ nav .navwrap a img {
 
 .workcell {
   background-size: cover;
-  height: 250px;
   border-bottom:5px solid #fff;
   display: inline-flex;
   justify-content: flex-end;
   flex-direction: column;
+  width: 100%;
+  min-height: 250px;
 }
 
 .workcell .workcell-title {
@@ -276,6 +279,10 @@ nav .navwrap a img {
   padding: 30px;
   background-color: #1a3e89;
   color: #999999;
+}
+
+#testimonials i {
+  font-size: 1.5rem;
 }
 
 #testimonials p {
@@ -310,7 +317,11 @@ nav .navwrap a img {
 #contact {
   background-color: #fff;
   color: #999;
+  padding: 30px;
+  box-sizing: border-box;
+  font-size: 0;
 }
+
 
 #contact a {
   color: #999;
@@ -319,7 +330,6 @@ nav .navwrap a img {
 
 section#contact h2 {
   text-align: center;
-  padding: 20px 0 20px;
   font-weight: 300;
   line-height: 2rem;
 }
@@ -338,19 +348,15 @@ section#contact h2 {
   margin: 0 15px 20px;
 }
 
-.social_links a i.fa {
-  font-size: 30px;
-  padding:15px;
-  color: #6d6d6d;
-}
-
 .contact_direct {
   text-align: center;
+  padding: 20px;
 }
 
 .contact_direct a {
   display: block;
   padding-bottom: 15px !important;
+  font-size: 1.075rem;
 }
 
 .contact_direct a i.fa {
@@ -359,12 +365,19 @@ section#contact h2 {
 }
 
 .contact_direct a i.fa-mobile-phone {
-  font-size: 18px;
+  font-size: 1.25rem;
 }
 
 .contact_direct a:last-child {
-  padding-bottom: 20px !important;
+  padding-bottom: 0 !important;
 }
+
+.social_links a i.fa {
+  font-size: 30px;
+  padding:15px;
+  color: #6d6d6d;
+}
+
 
 /***** FOOTER *****/
 footer {
@@ -443,16 +456,16 @@ nav .navwrap a img {
 }
 
 nav .navright h3 {
-  line-height: 2rem;
-  font-size: 2rem;
+  line-height: 1.5rem;
+  font-size: 1.4rem;
 }
 
 nav ul {
-  padding-top: 15px;
+  padding-top: 20px;
 }
 
 nav a {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
 }
 
 /* HERO */
@@ -482,26 +495,58 @@ nav a {
 
   #work, #about {
     margin: 0 auto;
+  }
 
+  .aboutcell img {
+    margin-right: 40px;
+    padding: 0;
   }
 
   .aboutcell {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 900px;
+    padding: 70px 0;
+  }
+
+  .aboutleft, .aboutright {
+    display: inline-block;
+  }
+
+  .aboutcell img {
+    width: 251px;
+    height: 251px;
+  }
+
+  .aboutcell p {
+    line-height: 1.5rem;
+  }
+
+  .aboutcell a {
+    font-size: 1.075rem;
+  }
+
+  #work {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(10, 150px);
+    grid-gap: 5px;
+    border-bottom: 5px solid #fff;
   }
 
   .workcell {
-    width: 50%;
     border: 0;
     margin: 0;
     padding: 0;
     filter: grayscale(75%);
+    height: auto;
   }
 
   .workcell:hover {
     filter: grayscale(0%);
     transition: .4s ease-out;
   }
+
+
 
   .workcell .workcell-title {
     bottom: 0;
@@ -514,26 +559,79 @@ nav a {
     font-size: 1.125rem;
   }
 
+  .workcell:nth-child(1) {
+    grid-column-end: span 6;
+    grid-row-end: span 3;
+  }
 
+  .workcell:nth-child(2) {
+    grid-column-end: span 3;
+    grid-row-end: span 2;
+  }
+
+  .workcell:nth-child(3) {
+    grid-column-end: span 3;
+    grid-row-end: span 2;
+  }
+
+  .workcell:nth-child(4) {
+    grid-column-end: span 4;
+    grid-row-end: span 3;
+  }
+
+  .workcell:nth-child(5) {
+    grid-column-end: span 2;
+    grid-row-end: span 3;
+  }
+
+  .workcell:nth-child(6) {
+    grid-column-end: span 2;
+    grid-row-end: span 2;
+  }
+
+  .workcell:nth-child(7) {
+    grid-column-end: span 4;
+    grid-row-end: span 2;
+  }
+
+
+
+
+
+.bottom-content {
+  font-size: 0;
+  display: table-cell;
+  height: 100%;
+  vertical-align: middle;
+}
 
 /* TESTIMONIALS */
 #testimonials {
   text-align: center;
   padding: 40px;
-  display: inline-block;
   width: 50%;
   box-sizing: border-box;
+  font-size: 0;
+  display: inline-block;
 }
 
 #testimonials p {
   padding: 20px 40px;
+  line-height: 1.75rem;
 }
 
 /* CONTACT */
 #contact {
-  display: inline-block;
-  width: 49%;
-  vertical-align: text-bottom;
+  vertical-align: top;
+  padding-top: 150px;
+  box-sizing: border-box;
+    display: inline-block;
+      width: 50%;
+      font-size: 0;
+}
+
+.contact {
+
 }
 
 section#contact h2 {
@@ -552,20 +650,14 @@ footer h6 {
 
   #work {
     text-align: center;
-    background-color: #cdcdcd;
   }
 
   .workcell {
-    width: 33.3333%;
     text-align: left;
   }
 
-  .workcell .workcell-title h3 {
-    font-size: 1.25rem;
-  }
-
-  .workcell .workcell-title h5 {
-    font-size: .9rem;
+  #contact {
+    padding-top: 70px;
   }
 
 }

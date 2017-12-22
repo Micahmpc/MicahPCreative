@@ -37,6 +37,13 @@ section#contact {
   text-align: left;
 }
 
+.portfolio_content section.content h5 {
+  width: 90%;
+  margin:10px auto 20px;
+  color: #6d6d6d;
+  text-align: left;
+}
+
 .portfolio_content section.content h6 {
   text-align: left;
   width: 85%;
