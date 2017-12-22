@@ -5,12 +5,12 @@ body {
 }
 
 h1 {
-  font-size: 2.25rem;
-  line-height: 2.25rem;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
 }
 
 h3 {
@@ -27,12 +27,16 @@ h5 {
 }
 
 h6 {
-  font-size: .725rem;
+  font-size: .9rem;
   line-height: 1rem;
 }
 
 p {
+<<<<<<< HEAD
   font-size: .9rem;
+=======
+  font-size: .8rem;
+>>>>>>> gh-pages
   line-height: 1.1rem;
 }
 
@@ -67,10 +71,18 @@ p {
   font-family: 'Roboto Slab', 'Times', serif;
 }
 
+<<<<<<< HEAD
+=======
+.center {
+  text-align: center;
+  margin: 0 auto;
+}
+
+>>>>>>> gh-pages
 
 /***** NAVIGATION *****/
 nav .navwrap {
-  padding: 10px;
+  padding: 10px 20px;
   display: block;
   position: fixed;
   z-index: 1000;
@@ -85,6 +97,11 @@ nav .navwrap {
 nav .navwrap a {
   display: inline-block;
   color: #1A3E89;
+}
+
+nav .navwrap a:hover {
+  color: #999;
+  transition: .125s ease-out;
 }
 
 nav .navright {
@@ -109,7 +126,7 @@ nav ul {
 
 nav ul li {
   display: inline-block;
-  padding-left: 30px;
+  padding-left: 20px;
 }
 
 nav a {
@@ -134,7 +151,11 @@ nav .navwrap a img {
 
 /***** HERO CELL *****/
 #hero {
+<<<<<<< HEAD
   background-image: url(../assets/images/_homepage/hero-background_mob.jpg);
+=======
+  background-image: url(../assets/images/homepage/hero-background_mob.jpg);
+>>>>>>> gh-pages
   background-position: center;
   background-size: cover;
   height: 270px;
@@ -142,9 +163,12 @@ nav .navwrap a img {
   color: #1A3E89;
 }
 
+#hero h1, #hero h5 {
+  text-shadow: 1px 2px 4px #fff;
+}
+
 #hero h2 {
   padding-top: 80px;
-  padding-bottom: 5px;
 }
 
 #hero h6 {
@@ -161,15 +185,31 @@ nav .navwrap a img {
 
 
 /***** ABOUT ME CELL *****/
+<<<<<<< HEAD
 .aboutcell {
   width: 100%;
   box-sizing: border-box;
   margin: 60px 0 0;
   overflow: hidden;
+=======
+#about {
+  width: 100%;
+  border-bottom: 5px solid #fff;
+text-align: center;
+}
+
+.aboutcell {
+  box-sizing: border-box;
+  padding: 50px 0 30px;
+  color: #6d6d6d;
+    display: inline-flex;
+    margin: 0 auto;
+>>>>>>> gh-pages
 }
 
 .aboutcell img {
   width: 105px;
+<<<<<<< HEAD
   float: left;
   padding: 0 20px;
 }
@@ -210,6 +250,54 @@ nav .navwrap a img {
   padding-right: 10px;
   position: relative;
   top: -2px;
+=======
+  padding: 0 20px;
+  border-radius: 100%;
+}
+
+
+.aboutcell p {
+  line-height: 1.125rem;
+  overflow: hidden;
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+.aboutcell .aboutright {
+  padding-right: 20px;
+}
+
+.aboutcell .aboutbottom {
+  text-align: left;
+}
+
+.aboutcell a {
+  margin: 0 auto;
+  font-size: 1rem;
+  color: #1a3e89;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.aboutcell a:first-of-type {
+  padding-right: 15px;
+  border-right: 1px solid #1a3e89;
+  margin-right: 15px;
+}
+
+.aboutcell .abouttitle {
+  font-weight: 700;
+  font-size: 1.375rem;
+  line-height: 1rem;
+  color: #6d6d6d;
+}
+
+/* PORTFOLIO */
+
+#work {
+  font-size: 0;
+
+>>>>>>> gh-pages
 }
 
 #work a {
@@ -218,6 +306,7 @@ nav .navwrap a img {
 
 .workcell {
   background-size: cover;
+<<<<<<< HEAD
   height: 250px;
   border-bottom:5px solid #fff;
 }
@@ -232,16 +321,40 @@ nav .navwrap a img {
   left: -5px;
   width: 85%;
   box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.5);
+=======
+  border-bottom:5px solid #fff;
+  display: inline-flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  width: 100%;
+  min-height: 250px;
+}
+
+.workcell .workcell-title {
+  background-color: rgba(0,0,0,.85);
+  color: #ffffff;
+  box-sizing: border-box;
+  padding: 10px 20px;
+
+>>>>>>> gh-pages
 }
 
 .workcell .workcell-title h3 {
   padding-bottom: 10px;
+<<<<<<< HEAD
+=======
+  font-family: 'Roboto Slab', 'Times', serif;
+>>>>>>> gh-pages
 }
 
 .workcell .workcell-title h5 {
   padding-bottom: 10px;
   font-weight: 400;
   line-height: 1.25rem;
+<<<<<<< HEAD
+=======
+  color: #999999;
+>>>>>>> gh-pages
 }
 
 
@@ -251,14 +364,27 @@ nav .navwrap a img {
   padding: 30px;
   background-color: #1a3e89;
   color: #999999;
+<<<<<<< HEAD
   height: 400px;
+=======
+}
+
+#testimonials i {
+  font-size: 1.5rem;
+>>>>>>> gh-pages
 }
 
 #testimonials p {
   text-align: center;
   padding: 15px;
+<<<<<<< HEAD
   line-height: normal;
   color: #fff;
+=======
+  line-height: 1.4rem;
+  color: #fff;
+  font-style: italic;
+>>>>>>> gh-pages
 }
 
 #testimonials h5, #testimonials h6 {
@@ -268,11 +394,20 @@ nav .navwrap a img {
 #testimonials h5 {
   margin-top: 25px;
   padding-bottom: 5px;
+<<<<<<< HEAD
+=======
+  font-size: 1rem;
+  font-weight: 400;
+>>>>>>> gh-pages
 }
 
 #testimonials h6 {
   margin-bottom: 15px;
   font-weight: 300;
+<<<<<<< HEAD
+=======
+  font-size: .8rem;
+>>>>>>> gh-pages
 }
 
 
@@ -282,8 +417,17 @@ nav .navwrap a img {
 #contact {
   background-color: #fff;
   color: #999;
+<<<<<<< HEAD
 }
 
+=======
+  padding: 30px;
+  box-sizing: border-box;
+  font-size: 0;
+}
+
+
+>>>>>>> gh-pages
 #contact a {
   color: #999;
   text-decoration: none;
@@ -291,7 +435,10 @@ nav .navwrap a img {
 
 section#contact h2 {
   text-align: center;
+<<<<<<< HEAD
   padding: 20px 0 20px;
+=======
+>>>>>>> gh-pages
   font-weight: 300;
   line-height: 2rem;
 }
@@ -310,6 +457,7 @@ section#contact h2 {
   margin: 0 15px 20px;
 }
 
+<<<<<<< HEAD
 .social_links a i.fa {
   font-size: 30px;
   padding:15px;
@@ -318,11 +466,20 @@ section#contact h2 {
 
 .contact_direct {
   text-align: center;
+=======
+.contact_direct {
+  text-align: center;
+  padding: 20px;
+>>>>>>> gh-pages
 }
 
 .contact_direct a {
   display: block;
   padding-bottom: 15px !important;
+<<<<<<< HEAD
+=======
+  font-size: 1.075rem;
+>>>>>>> gh-pages
 }
 
 .contact_direct a i.fa {
@@ -331,6 +488,7 @@ section#contact h2 {
 }
 
 .contact_direct a i.fa-mobile-phone {
+<<<<<<< HEAD
   font-size: 18px;
 }
 
@@ -338,6 +496,22 @@ section#contact h2 {
   padding-bottom: 20px !important;
 }
 
+=======
+  font-size: 1.25rem;
+}
+
+.contact_direct a:last-child {
+  padding-bottom: 0 !important;
+}
+
+.social_links a i.fa {
+  font-size: 30px;
+  padding:15px;
+  color: #6d6d6d;
+}
+
+
+>>>>>>> gh-pages
 /***** FOOTER *****/
 footer {
   padding: 20px 0;
@@ -366,6 +540,257 @@ footer h6 {
 
 @media screen and (min-width: 768px) {
 
+/* GLOBAL */
+h1 {
+  font-size: 5rem;
+  line-height: 5rem;
+}
 
+h2 {
+  font-size: 3.25rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+h4 {
+  font-size: 1.75rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+
+h6 {
+  font-size: 1.25rem;
+  line-height: 1rem;
+}
+
+p {
+  font-size: 1.075rem;
+}
+
+
+
+.container {
+  padding-top: 90px;
+}
+
+nav .navwrap {
+  height: 90px;
+  padding: 15px 20px;
+}
+
+nav .navwrap a img {
+  height: 60px;
+}
+
+nav .navright h3 {
+  line-height: 1.5rem;
+  font-size: 1.4rem;
+}
+
+nav ul {
+  padding-top: 20px;
+}
+
+nav a {
+  font-size: 1.125rem;
+}
+
+/* HERO */
+#hero {
+  background-image: url(../assets/images/homepage/hero-background.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+  text-align: center;
+  color: #1A3E89;
+}
+
+#hero h2 {
+  padding-top: 160px;
+  padding-bottom: 10px;
+}
+
+#hero h6 {
+  font-weight: 400;
+  padding-top: 25px;
+}
+
+/* PORTFOLIO */
+.content-container {
+  margin: 0 auto;
+}
+
+  #work, #about {
+    margin: 0 auto;
+  }
+
+  .aboutcell img {
+    margin-right: 40px;
+    padding: 0;
+  }
+
+  .aboutcell {
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 70px 0;
+  }
+
+  .aboutleft, .aboutright {
+    display: inline-block;
+  }
+
+  .aboutcell img {
+    width: 251px;
+    height: 251px;
+  }
+
+  .aboutcell p {
+    line-height: 1.5rem;
+  }
+
+  .aboutcell a {
+    font-size: 1.075rem;
+  }
+
+  #work {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(10, 150px);
+    grid-gap: 5px;
+    border-bottom: 5px solid #fff;
+  }
+
+  .workcell {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    filter: grayscale(75%);
+    height: auto;
+  }
+
+  .workcell:hover {
+    filter: grayscale(0%);
+    transition: .4s ease-out;
+  }
+
+
+
+  .workcell .workcell-title {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: none;
+  }
+
+  .workcell .workcell-title h5 {
+    font-size: 1.125rem;
+  }
+
+  .workcell:nth-child(1) {
+    grid-column-end: span 6;
+    grid-row-end: span 3;
+  }
+
+  .workcell:nth-child(2) {
+    grid-column-end: span 3;
+    grid-row-end: span 2;
+  }
+
+  .workcell:nth-child(3) {
+    grid-column-end: span 3;
+    grid-row-end: span 2;
+  }
+
+  .workcell:nth-child(4) {
+    grid-column-end: span 4;
+    grid-row-end: span 3;
+  }
+
+  .workcell:nth-child(5) {
+    grid-column-end: span 2;
+    grid-row-end: span 3;
+  }
+
+  .workcell:nth-child(6) {
+    grid-column-end: span 2;
+    grid-row-end: span 2;
+  }
+
+  .workcell:nth-child(7) {
+    grid-column-end: span 4;
+    grid-row-end: span 2;
+  }
+
+
+
+
+
+.bottom-content {
+  font-size: 0;
+  display: table-cell;
+  height: 100%;
+  vertical-align: middle;
+}
+
+/* TESTIMONIALS */
+#testimonials {
+  text-align: center;
+  padding: 40px;
+  width: 50%;
+  box-sizing: border-box;
+  font-size: 0;
+  display: inline-block;
+}
+
+#testimonials p {
+  padding: 20px 40px;
+  line-height: 1.75rem;
+}
+
+/* CONTACT */
+#contact {
+  vertical-align: top;
+  padding-top: 150px;
+  box-sizing: border-box;
+    display: inline-block;
+      width: 50%;
+      font-size: 0;
+}
+
+.contact {
+
+}
+
+section#contact h2 {
+  line-height: 3.5rem;
+}
+
+footer h6 {
+  font-size: .9rem;
+}
+
+}
+
+
+
+@media screen and (min-width: 1440px) {
+
+  #work {
+    text-align: center;
+  }
+
+  .workcell {
+    text-align: left;
+  }
+
+  #contact {
+    padding-top: 70px;
+  }
 
 }
