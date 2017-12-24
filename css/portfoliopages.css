@@ -173,6 +173,10 @@ font-size: 1.5rem;
 
 /* PORTFOLIO */
 
+.portfolio_content section.aboutmepage {
+  max-width: 775px;
+}
+
   .portfolio_content section.hero {
     background-size: cover !important;
     padding:  250px 40px;

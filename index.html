@@ -37,7 +37,7 @@
         <section id="about">
           <div class="aboutcell" id="aboutcell">
             <div class="aboutleft">
-              <img src="assets/images/homepage/avatar.jpg" alt="Micah">
+              <img src="assets/images/homepage/avatar.jpg" alt="Micah" onmouseover="rollover(this)" onmouseout="mouseaway(this)">
             </div>
             <div class="aboutright">
               <p><span class="abouttitle">A Little About Me...</span></p>
@@ -136,5 +136,20 @@
         </footer>
       </div>
   </div>
+
+  <script type="text/javascript">
+
+  function rollover(my_image)
+    {
+      my_image.src = "assets/images/homepage/avatar_secret.jpg";
+    }
+
+
+    function mouseaway(my_image)
+    {
+      my_image.src = 'assets/images/homepage/avatar.jpg';
+    }
+
+</script>
 </body>
 </html>

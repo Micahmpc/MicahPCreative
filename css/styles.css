@@ -195,11 +195,13 @@ text-align: center;
 }
 
 
+
 .aboutcell p {
   line-height: 1.125rem;
   overflow: hidden;
   text-align: left;
   padding-bottom: 20px;
+  font-size: 1.025rem;
 }
 
 .aboutcell .aboutright {
@@ -513,8 +515,8 @@ nav a {
   }
 
   .aboutcell img {
-    width: 251px;
-    height: 251px;
+    width: 280px;
+    height: 280px;
   }
 
   .aboutcell p {
