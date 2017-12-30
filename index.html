@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
   </head>
 <body>
   <nav id="top">
@@ -17,7 +18,7 @@
         <img src="assets/images/homepage/mp-logo.svg" alt="@micahmpc">
       </a>
       <div class="navright">
-        <h3>Micah Parker <span class="grey1 t400">//</span> <span class="grey2 t400">Designer</span></h3>
+        <a href="index.html"><h3>Micah Parker <span class="grey1 t400">//</span> <span class="grey2 t400">Designer</span></h3></a>
         <ul>
           <li><a href="about.html">About</a></li>
           <li><a href="index.html#work">Work</a></li>
@@ -37,12 +38,12 @@
         <section id="about">
           <div class="aboutcell" id="aboutcell">
             <div class="aboutleft">
-              <img src="assets/images/homepage/avatar.jpg" alt="Micah" onmouseover="rollover(this)" onmouseout="mouseaway(this)">
+              <img src="assets/images/homepage/avatar_2.jpg" alt="Micah" onmouseover="rollover(this)" onmouseout="mouseaway(this)">
             </div>
             <div class="aboutright">
               <p><span class="abouttitle">A Little About Me...</span></p>
               <p>
-              Hi I’m Micah! I’m a designer and thinker with a knack for strategy and solving problems. My background includes designing user experiences, web interfaces and full sites, branding, and marketing among other things. In my free time I pursue hobbies like woodworking in my home shop, and fishing. The draw for me to design and also to my hobbies (other than awesome furniture and delicious food), is that they all involve a good deal of challenge that requires learning and strategizing, and ultimately learning from failure in some cases. I think the best feeling in the world is conquering a challenge. And through design, I'm able to work my way through challenge until I achieve the desired outcome. Success.
+              Hi I’m Micah! I’m a designer and thinker with a knack for strategy and solving problems. My background includes designing user experiences, web interfaces and full sites, branding, and marketing among other things. In my free time I pursue hobbies like woodworking in my home shop, and fishing. The draw for me to design and also to my hobbies (other than awesome furniture and delicious food), is that they all involve a good deal of challenge that requires learning and strategizing, and ultimately learning from failure in some cases. I think the best feeling in the world is conquering a challenge. And through design, I'm able to work my way through problems until I achieve the desired outcome. Success.
               </p>
               <div class="aboutbottom">
                 <a href="about.html">Read More</a>
@@ -141,15 +142,24 @@
 
   function rollover(my_image)
     {
-      my_image.src = "assets/images/homepage/avatar_secret.jpg";
+      my_image.src = "assets/images/homepage/avatar_secret_2.jpg";
     }
-
 
     function mouseaway(my_image)
     {
-      my_image.src = 'assets/images/homepage/avatar.jpg';
+      my_image.src = 'assets/images/homepage/avatar_2.jpg';
     }
 
 </script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111622996-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-111622996-1');
+</script>
+
 </body>
 </html>

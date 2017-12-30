@@ -92,7 +92,7 @@ nav .navwrap a {
   color: #1A3E89;
 }
 
-nav .navwrap a:hover {
+nav .navwrap a:hover, .aboutcell a:hover {
   color: #999;
   transition: .125s ease-out;
 }
@@ -114,12 +114,12 @@ nav ul {
   vertical-align: text-bottom;
   display: block;
   font-weight: 400;
-  padding-top: 10px;
+  padding-top: 8px;
 }
 
 nav ul li {
   display: inline-block;
-  padding-left: 20px;
+  padding-left: 10px;
 }
 
 nav a {
@@ -464,6 +464,10 @@ nav .navright h3 {
 
 nav ul {
   padding-top: 20px;
+}
+
+nav ul li {
+  padding-left: 22px;
 }
 
 nav a {

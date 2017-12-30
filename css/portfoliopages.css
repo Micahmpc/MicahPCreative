@@ -6,7 +6,7 @@ section#contact {
 
 /* PORTFOLIO PAGE STYLES*/
 .portfolio_content section.content {
-  max-width: 1200px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -48,7 +48,7 @@ section#contact {
   text-align: left;
   width: 85%;
   color: #1a3e89;
-  margin: 15px auto 0;
+  margin: 25px auto 0;
 }
 
 .portfolio_content section.content p {
@@ -124,8 +124,12 @@ display: block;
   margin: 50px 0;
 }
 
-.portfolio_content section.content .device-mockup img {
+.portfolio_content section.content .device-mockup img, .portfolio_content section.content .illustration-mockup img {
   width: 94%;
+}
+
+.portfolio_content section.content .illustration-mockup img:first-of-type, .portfolio_content section.content .illustration-mockup img:nth-of-type(5) {
+  padding-top: 50px;
 }
 
 .portfolio_content section.content h6:last-of-type {
@@ -217,6 +221,20 @@ font-size: 1.5rem;
 
   .portfolio_content section.content .device-mockup img {
     width: 94%;
+  }
+
+  .portfolio_content section.content .illustration-mockup {
+    width: 100%;
+    text-align: center;
+  }
+
+  .portfolio_content section.content .illustration-mockup img {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .portfolio_content section.content .illustration-mockup img:first-of-type, .portfolio_content section.content .illustration-mockup img:nth-of-type(5) {
+    padding-top: 80px;
   }
 
   .portfolio_content section.content h6 {
