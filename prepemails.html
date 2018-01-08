@@ -7,7 +7,7 @@
     <title>Micah Parker - UX | UI | Visual | Development | Branding</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,400i,700,900" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="css/portfoliopages.css">
   </head>
@@ -33,8 +33,13 @@
         <div class="title">
           <h2 class="slab">Prep Sportswear Email Overhaul</h2>
           <h3 class="slab">Increasing engagement via improved communication</h3>
+          <p>Visual Design | Email Development | Brand Marketing</p>
         </div>
       </section>
+      <div class="project-flow-nav">
+          <h6><a href="prepsportswear.html"><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i>previous</a></h6>
+          <h6><a href="ourdrive.html">next<i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></a></h6>
+      </div>
       <section class="content">
         <h4 class="slab">A Rules of Engagement</h4>
         <p>How does one improve the effectiveness of communication as a brand?</p>
@@ -88,13 +93,20 @@
         <p>Within the URL, there was a legacy piece that didn't work really regarding scale. In fact you could omit it completely and it wouldn't change anything. The problem though was that it only showed the full image, which was a product shot from the website, of a product in full, at a 3/4 angle. To make the designs really pop and look up to snuff with the new athletic standard of cool imagery in their content, we needed to be able crop the images to fit better with the surrounding content and not just floating around on top of it.</p>
         <p>I worked out a minimum-viable-product with our wiz software engineer (a former Navy Seal engineer, turned software engineer). I decided on how we wanted to administer the crop function, within the bounds of the URL. There needed to be two dimensions, vertical and horizontal, and a third dimension for scale. The vertical would be administered as a percentage of height from zero (top of the product shot referenced), the horizontal as a percentage from the middle out, and the scale, which would zoom in or out accordingly. Then my spy friend went into our repository and made those things happen. A URL based crop and zoom, simple enough that any new employee or designer working on emails could edit a product shot on the fly, functionally removing the designer from this part of the equation, and putting it rightfully into the hands of the email team to customize the templates without needing our help.</p>
 
-                <h5 class="quotable"><i class="fa fa-quote-left" aria-hidden="true"></i>...simple enough that any new employee or designer working on emails could edit a product shot on the fly, functionally removing the designer from this part of the equation...<i class="fa fa-quote-right" aria-hidden="true"></i></h5>
+        <h5 class="quotable"><i class="fas fa-quote-left" aria-hidden="true"></i>...simple enough that any new employee or designer working on emails could edit a product shot on the fly, functionally removing the designer from this part of the equation...<i class="fas fa-quote-right" aria-hidden="true"></i></h5>
 
         <h4 class="slab">The Aftermath</h4>
         <p>Numbers sky-rocketed. Before releasing the whole set and figuring out our new technology we were building, we release the first email template. Open rates went up due to lack of Spam filtering. Click-through rates skyrocketed from their previous average, and conversion rates crept up, and bounce rates dropped. Most of this is simply due to the most basic improvement of making them responsive. But all the numbers held up with future sends and were back in line with industry averages or higher, and prompted the redoing of the triggered emails as well. A project I would start before handing off, as I moved on to build the front-end of the new website. The technology we had built, we were also able to apply to the platform of both the current website and the one we were beginning to build.</p>
         <p>The other half of this project that goes fairly unseen actually, is that what it really also gave us was a better process through standardization. The design team no longer had to constantly update email code, or create assets on assets for a single email. When they did, they had a style guide to work of off to answer any questions. And everything was put in the hands of the email team, with the exception of custom hero image creation. It ended up saving all teams involved a lot of headache, took out a lot of the need for communication and requests between busy teams, and, well, they looked a lot cooler.</p>
 
       </section>
+
+      <div class="project-flow-nav project-flow-nav-bottom">
+          <h6><a href="prepsportswear.html"><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i>previous</a></h6>
+          <h6><a href="ourdrive.html">next<i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></a></h6>
+      </div>
+
+
 
 
 
@@ -105,19 +117,19 @@
 
 
 <!-- GLOBAL CONTENT  -->
-    <section id="contact">
-      <h2><span class="slab" style="font-weight:400;">Like what you see?</span>
-        <br>Drop me a line</h2>
-        <div class="contact_direct">
-          <a href="tel:1-206-948-9644"><i class="fa fa-mobile-phone" aria-hidden="true"></i>206.948.9644</a>
-          <a href="mailto:micah.mpc@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i>micah.mpc@gmail.com</a>
-        </div>
-      <div class="social_links">
-        <a href="https://www.linkedin.com/in/micah-parker-30a01a1a/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-        <a href="https://github.com/Micahmpc" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a>
-        <a href="https://www.instagram.com/Micahmpc/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-      </div>
-    </section>
+<section id="contact">
+  <h2><span class="slab" style="font-weight:400;">Like what you see?</span>
+  <br>Drop me a line</h2>
+  <div class="contact_direct">
+    <a href="tel:1-206-948-9644"><i class="fas fa-mobile-alt"></i>206.948.9644</a>
+    <a href="mailto:micah.mpc@gmail.com"><i class="fas fa-envelope" aria-hidden="true"></i>micah.mpc@gmail.com</a>
+  </div>
+  <div class="social_links">
+    <a href="https://www.linkedin.com/in/micahmpc/" target="_blank"><i class="fab fa-linkedin fa-sm"></i></a>
+    <a href="https://github.com/Micahmpc" target="_blank"><i class="fab fa-github-square"></i></a>
+    <a href="https://www.instagram.com/Micahmpc/" target="_blank"><i class="fab fa-instagram"></i></a>
+  </div>
+</section>
 
     <footer>
       <img src="assets/images/homepage/mp-logo.svg" alt="@micahmpc">

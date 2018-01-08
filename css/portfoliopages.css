@@ -3,8 +3,16 @@ section#contact {
   border-top: 1px solid #cdcdcd;
 }
 
-
 /* PORTFOLIO PAGE STYLES*/
+.portfolio_content section.aboutmepage h6 a {
+  padding: 5px 20px !important;
+  border-right: 2px solid #1a3e89;
+}
+
+.portfolio_content section.aboutmepage h6 a:last-child {
+  border-right: none;
+}
+
 .portfolio_content section.content {
   max-width: 800px;
   margin: 0 auto;
@@ -17,7 +25,7 @@ section#contact {
 }
 
 .portfolio_content .hero h2 {
-  padding-bottom: 10px;
+  padding-bottom: 2px;
   font-weight: 700;
 }
 
@@ -27,7 +35,28 @@ section#contact {
 }
 
 .portfolio_content section.hero .title {
-  padding: 30px;
+  padding: 30px 0;
+}
+
+.portfolio_content section.hero .title h3 i {
+  padding-top: 10px;
+}
+
+.portfolio_content section.hero .title h3 a {
+  color: #fff;
+  font-size: 30px;
+}
+
+.portfolio_content section.hero .title h3 a:hover {
+  color: #1a3e89;
+  transition: .125s ease-out;
+}
+
+.portfolio_content section.hero .title p {
+  color: #999999;
+  text-align: center;
+  padding-top: 5px;
+  font-size: .9rem;
 }
 
 .portfolio_content section.content h4 {
@@ -35,6 +64,10 @@ section#contact {
   margin:30px auto 0;
   color: #6d6d6d;
   text-align: left;
+}
+
+.portfolio_content section.content h4:first-of-type {
+  margin:15px auto 0;
 }
 
 .portfolio_content section.content h5 {
@@ -132,17 +165,11 @@ display: block;
   padding-top: 50px;
 }
 
-.portfolio_content section.content h6:last-of-type {
+.portfolio_content section.content h6.project-link {
 text-align: center;
-padding: 30px 0 70px;
+padding: 15px 0;
 display: block;
 font-size: 1.5rem;
-}
-
-.portfolio_content section.content h6.h6-rm-lastof {
-  text-align: left;
-  padding: 0;
-  font-size: 1.25rem;
 }
 
 .portfolio_content section.content h6 a {
@@ -152,6 +179,38 @@ font-size: 1.5rem;
   text-align: center;
   font-size: 1.25rem;
   padding: 30px 0 30px;
+}
+
+.portfolio_content .project-flow-nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 20px 0;
+}
+
+.portfolio_content .project-flow-nav-bottom {
+  margin: 15px 20px;
+}
+
+.portfolio_content .project-flow-nav a {
+  text-decoration: none;
+  color: #1a3e89;
+}
+
+.portfolio_content .project-flow-nav a:hover {
+  color: #999999;
+}
+
+.portfolio_content .project-flow-nav h6 i {
+  position: relative;
+  top: 1px;
+}
+
+.portfolio_content .project-flow-nav h6:first-child i:last-child {
+  padding-right: 8px;
+}
+
+.portfolio_content .project-flow-nav h6:last-child i:first-child {
+  padding-left: 8px;
 }
 
 .portfolio_content section.content a:hover {
@@ -183,10 +242,28 @@ font-size: 1.5rem;
 
   .portfolio_content section.hero {
     background-size: cover !important;
-    padding:  250px 40px;
+    padding:  230px 40px;
     height: 700px;
     box-sizing: border-box;
     margin-bottom: 70px;
+  }
+
+  .portfolio_content .hero h2, .portfolio_content .hero h3  {
+    font-weight: 400;
+  }
+
+  .portfolio_content section.hero .title p {
+    padding-top: 25px;
+    font-size: 1.075rem;
+  }
+
+  .portfolio_content section.hero .title h3 i {
+    padding-top: 30px;
+  }
+
+  .portfolio_content section.hero .title h3 a {
+    color: #fff;
+    font-size: 40px;
   }
 
   .portfolio_content section.content p {
