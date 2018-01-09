@@ -4,6 +4,10 @@ body {
   background-color: #fff;
 }
 
+::selection, ::-moz-selection {
+  background: #999999;
+}
+
 h1 {
   font-size: 2.5rem;
   line-height: 2.5rem;
@@ -27,13 +31,13 @@ h5 {
 }
 
 h6 {
-  font-size: .9rem;
-  line-height: 1rem;
+  font-size: 1.25rem;
+  line-height: 1.375rem;
 }
 
 p {
-  font-size: 1rem;
-  line-height: 1.1rem;
+  font-size: 1.125rem;
+  line-height: 1.15rem;
 }
 
 
@@ -81,7 +85,6 @@ nav .navwrap {
   z-index: 1000;
   width: 100%;
   box-sizing: border-box;
-  white-space: nowrap;
   box-shadow: 0px 1px 7px rgba(0,0,0,.5);
   height: 60px;
   background-color: #fff;
@@ -163,6 +166,7 @@ nav .navwrap a img {
 #hero h6 {
   font-weight: 400;
   padding-top: 5px;
+  font-size: .9rem;
 }
 
 /***** CONTENT CONTAINER *****/
@@ -218,44 +222,6 @@ text-align: center;
 }
 
 
-
-.aboutcell p {
-  line-height: 1.125rem;
-  overflow: hidden;
-  text-align: left;
-  padding-bottom: 20px;
-  font-size: 1.025rem;
-}
-
-.aboutcell .aboutright {
-  padding-right: 20px;
-}
-
-.aboutcell .aboutbottom {
-  text-align: left;
-}
-
-.aboutcell a {
-  margin: 0 auto;
-  font-size: 1rem;
-  color: #1a3e89;
-  text-decoration: none;
-  font-weight: 700;
-}
-
-.aboutcell a:first-of-type {
-  padding-right: 15px;
-  border-right: 1px solid #1a3e89;
-  margin-right: 15px;
-}
-
-.aboutcell .abouttitle {
-  font-weight: 700;
-  font-size: 1.375rem;
-  line-height: 1rem;
-  color: #6d6d6d;
-}
-
 /* PORTFOLIO */
 
 #work {
@@ -285,6 +251,16 @@ text-align: center;
 
 }
 
+a.workcell h3:hover {
+  color: #cdcdcd;
+  transition: .125s ease-out;
+}
+
+a.workcell h5:hover {
+  color: #999999;
+  transition: .125s ease-out;
+}
+
 .workcell .workcell-title h3 {
   padding-bottom: 10px;
   font-family: 'Roboto Slab', 'Times', serif;
@@ -294,7 +270,7 @@ text-align: center;
   padding-bottom: 10px;
   font-weight: 400;
   line-height: 1.25rem;
-  color: #999999;
+  color: #cdcdcd;
 }
 
 
@@ -324,15 +300,15 @@ text-align: center;
 
 #testimonials h5 {
   margin-top: 25px;
-  padding-bottom: 5px;
-  font-size: 1rem;
+  padding-bottom: 10px;
+  font-size: 1.25rem;
   font-weight: 400;
 }
 
 #testimonials h6 {
   margin-bottom: 15px;
   font-weight: 300;
-  font-size: .8rem;
+  font-size: 1rem;
 }
 
 
@@ -342,7 +318,7 @@ text-align: center;
 #contact {
   background-color: #fff;
   color: #999;
-  padding: 30px;
+  padding-top: 30px;
   box-sizing: border-box;
   font-size: 0;
 }
@@ -372,7 +348,7 @@ section#contact h2 {
   border: 2px solid #cdcdcd;
   border-radius: 100%;
   display: inline-block;
-  margin: 0 10px;
+  margin: 0 10px 30px;
 }
 
 .contact_direct {
@@ -419,6 +395,7 @@ footer h6 {
   color: #1a3e89;
   font-weight: 300;
   border: 0;
+  font-size: .9rem;
 }
 
 
@@ -586,7 +563,7 @@ nav a {
 
   .workcell:hover {
     filter: grayscale(0%);
-    transition: .4s ease-out;
+    transition: .125s ease-out;
   }
 
 
@@ -663,6 +640,10 @@ nav a {
   line-height: 1.75rem;
 }
 
+#testimonials h5 {
+  padding-bottom: 5px;
+}
+
 /* CONTACT */
 #contact {
   vertical-align: top;
@@ -673,7 +654,7 @@ nav a {
   height: auto;
   align-items: center;
   justify-content: center;
-  margin: auto
+  padding-top: 140px;
 }
 
 .social_links a {
@@ -682,7 +663,7 @@ nav a {
   border: 2px solid #cdcdcd;
   border-radius: 100%;
   display: inline-block;
-  margin: 0 15px 20px;
+  margin: 0 15px;
 }
 
 .social_links a i.fa, .social_links a i.fab, .social_links a i.fas {
@@ -700,4 +681,16 @@ footer h6 {
   font-size: .9rem;
 }
 
+}
+
+@media screen and (min-width: 1040px) {
+  #contact {
+    padding-top: 90px
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #contact {
+    padding-top: 70px
+  }
 }

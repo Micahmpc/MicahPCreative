@@ -4,6 +4,11 @@ section#contact {
 }
 
 /* PORTFOLIO PAGE STYLES*/
+.portfolio_content section.content.aboutmepage h6:last-of-type {
+  margin: 50px 20px 30px;
+  text-align: center;
+}
+
 .portfolio_content section.aboutmepage h6 a {
   padding: 5px 20px !important;
   border-right: 2px solid #1a3e89;
@@ -162,6 +167,20 @@ display: block;
   width: 94%;
 }
 
+
+  .portfolio_content section.content .device-mockup i, .portfolio_content section.content .project-image i, .portfolio_content section.content .illustration-mockup i {
+    display: block;
+    font-size: 2rem;
+    padding-top: 5px;
+  }
+
+  .portfolio_content section.content .device-mockup p.dropbox-link, .portfolio_content section.content .project-image p.dropbox-link, .portfolio_content section.content .illustration-mockup p.dropbox-link {
+    text-align: center;
+    font-weight: 300 !important;
+    padding-top: 20px;
+    font-size: 1.375rem;
+  }
+
 .portfolio_content section.content .illustration-mockup img:first-of-type, .portfolio_content section.content .illustration-mockup img:nth-of-type(5) {
   padding-top: 50px;
 }
@@ -186,6 +205,10 @@ font-size: 1.5rem;
   display: flex;
   justify-content: space-between;
   margin: 15px 20px 0;
+}
+
+.portfolio_content .project-flow-nav h6 {
+  font-size: 1rem;
 }
 
 .portfolio_content .project-flow-nav-bottom {
@@ -301,6 +324,11 @@ font-size: 1.5rem;
 
   .portfolio_content section.content .device-mockup img {
     width: 94%;
+  }
+
+  .portfolio_content section.content .device-mockup p.dropbox-link, .portfolio_content section.content .project-image p.dropbox-link, .portfolio_content section.content .illustration-mockup p.dropbox-link {
+    text-align: center;
+    padding-top: 30px;
   }
 
   .portfolio_content section.content .illustration-mockup {
