@@ -100,6 +100,7 @@ section#contact {
 
 .portfolio_content section.content p a:hover {
   color: #999;
+  transition: .125s ease-out;
 }
 
 .portfolio_content section.content ul {
@@ -198,6 +199,7 @@ font-size: 1.5rem;
 
 .portfolio_content .project-flow-nav a:hover {
   color: #999999;
+  transition: .125s ease-out;
 }
 
 .portfolio_content .project-flow-nav h6 i {
@@ -214,7 +216,8 @@ font-size: 1.5rem;
 }
 
 .portfolio_content section.content a:hover {
-  color: #6d6d6d;
+  color: #999999;
+  transition: .125s ease-out;
 }
 
 
@@ -229,9 +232,10 @@ font-size: 1.5rem;
 /* MODS TO GLOBAL */
   section#contact {
     width: 100%;
-    margin-top: 60px;
+    margin-top: 30px;
     padding: 30px 0;
     border-top: 1px solid #cdcdcd;
+    display: block;
   }
 
 /* PORTFOLIO */
@@ -245,7 +249,6 @@ font-size: 1.5rem;
     padding:  230px 40px;
     height: 700px;
     box-sizing: border-box;
-    margin-bottom: 70px;
   }
 
   .portfolio_content .hero h2, .portfolio_content .hero h3  {
@@ -253,7 +256,7 @@ font-size: 1.5rem;
   }
 
   .portfolio_content section.hero .title p {
-    padding-top: 25px;
+    padding-top: 20px;
     font-size: 1.075rem;
   }
 
@@ -321,6 +324,12 @@ font-size: 1.5rem;
   .portfolio_content section.content h6 a {
     font-size: 1.75rem;
     line-height: 1.75rem;
+    text-align: center;
+  }
+
+  .portfolio_content .project-flow-nav {
+    margin: 15px auto 30px;
+    max-width: 760px;
     text-align: center;
   }
 
