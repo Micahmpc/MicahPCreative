@@ -218,6 +218,7 @@ font-size: 1.5rem;
 .portfolio_content .project-flow-nav a {
   text-decoration: none;
   color: #1a3e89;
+  font-weight: 400;
 }
 
 .portfolio_content .project-flow-nav a:hover {

@@ -1,4 +1,8 @@
 /***** GLOBAL STYLES *****/
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
 body {
   font-family: 'Roboto', 'Arial', sans-serif;
   background-color: #fff;
