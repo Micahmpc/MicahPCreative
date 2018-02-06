@@ -71,10 +71,6 @@ p {
   font-weight: 400;
 }
 
-.slab {
-  font-family: 'Roboto Slab', 'Times', serif;
-}
-
 .center {
   text-align: center;
   margin: 0 auto;
@@ -154,7 +150,7 @@ nav .navwrap a img {
   background-image: url(../assets/images/homepage/hero-background_mob.jpg);
   background-position: center;
   background-size: cover;
-  height: 350px;
+  height: 275px;
   text-align: center;
   color: #1A3E89;
 }
@@ -164,7 +160,7 @@ nav .navwrap a img {
 }
 
 #hero h2 {
-  padding-top: 105px;
+  padding-top: 75px;
 }
 
 #hero h6 {
@@ -267,7 +263,6 @@ a.workcell h5:hover {
 
 .workcell .workcell-title h3 {
   padding-bottom: 10px;
-  font-family: 'Roboto Slab', 'Times', serif;
 }
 
 .workcell .workcell-title h5 {
@@ -480,13 +475,13 @@ nav a {
   background-image: url(../assets/images/homepage/hero-background.jpg);
   background-position: center;
   background-size: cover;
-  height: 600px;
+  height: 400px;
   text-align: center;
   color: #1A3E89;
 }
 
 #hero h2 {
-  padding-top: 160px;
+  padding-top: 85px;
   padding-bottom: 5px;
 }
 
@@ -553,7 +548,9 @@ nav a {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(10, 150px);
     grid-gap: 5px;
-    border-bottom: 5px solid #fff;
+    border-bottom: 20px solid #fff;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   .workcell {
