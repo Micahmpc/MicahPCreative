@@ -37,12 +37,6 @@
           <h3><a href="http://youthsports.prepsportswear.com" target="_blank"><i class="fas fa-link"></i></a></h3>
         </div>
       </section>
-      <!-- <div class="project-flow-nav">
-          <h6><a href="illustration.html"><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i>previous</a></h6>
-          <h6><a href="prepsportswear.html">next<i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></a></h6>
-      </div> -->
-
-
 
       <div id="sec1" class="page-nav-block">
         <div class="page-nav">
@@ -162,12 +156,25 @@
 
         <h6 class="project-link"><a href="https://youthsports.prepsportswear.com" target="_blank">VISIT PROJECT</a>
         </h6>
-
-
       </section>
-      <div class="project-flow-nav project-flow-nav-bottom">
-          <h6><a href="illustration.html"><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i>previous</a></h6>
-          <h6><a href="prepsportswear.html">next<i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></a></h6>
+
+      <div class="next-proj-block">
+        <div class="cell">
+          <a href="#">
+            <div class="last-proj">
+              <h6><i class="fas fa-backward" style="padding-right: 5px;"></i></h6>
+              <h3>Homepage</h3>
+              <p>return to portfolio</p>
+              </div>
+          </a>
+          <a href="#">
+            <div class="next-proj">
+              <h6><i class="fas fa-forward" style="padding-left: 5px;"></i></h6>
+              <h3>Prep Sportswear</h3>
+              <p>ui development | architecture & process creation | ux</p>
+            </div>
+          </a>
+        </div>
       </div>
 
 
@@ -179,11 +186,8 @@
 
 <!-- GLOBAL CONTENT  -->
     <section id="contact">
-      <h2><span style="font-weight:400;">Like what you see?</span>
-      <br>Drop me a line</h2>
-      <div class="contact_direct">
-        <a href="tel:1-206-948-9644"><i class="fas fa-mobile-alt"></i>206.948.9644</a>
-        <a href="mailto:micah.mpc@gmail.com"><i class="fas fa-envelope" aria-hidden="true"></i>micah.mpc@gmail.com</a>
+      <div class="contact-avatar">
+        <img src="assets/images/homepage/avatar_2.jpg" alt="Micah" onmouseover="rollover(this)" onmouseout="mouseaway(this)">
       </div>
       <div class="social_links">
         <a href="https://www.linkedin.com/in/micahmpc/" target="_blank"><i class="fab fa-linkedin fa-sm"></i></a>
@@ -191,6 +195,13 @@
         <a href="https://www.instagram.com/Micahmpc/" target="_blank"><i class="fab fa-instagram"></i></a>
         <a href="https://medium.com/@micah.mpc" target="_blank"><i class="fab fa-medium"></i></a>
       </div>
+      <h2><span style="font-weight:400;">Like what you see?</span>
+      <br>Drop me a line</h2>
+      <div class="contact_direct">
+        <a href="tel:1-206-948-9644"><i class="fas fa-mobile-alt"></i>206.948.9644</a>
+        <a href="mailto:micah.mpc@gmail.com"><i class="fas fa-envelope" aria-hidden="true"></i>micah.mpc@gmail.com</a>
+      </div>
+
     </section>
 
     <footer>
@@ -199,6 +210,17 @@
     </footer>
   </div>
 
+
+<script type="text/javascript">
+  function rollover(my_image)
+    {
+      my_image.src = "assets/images/homepage/avatar_secret_2.jpg";
+    }
+  function mouseaway(my_image)
+    {
+      my_image.src = 'assets/images/homepage/avatar_2.jpg';
+    }
+</script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111622996-1"></script>
 <script>

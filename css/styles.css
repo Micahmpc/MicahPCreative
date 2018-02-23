@@ -102,7 +102,7 @@ nav .navwrap a {
 }
 
 nav .navwrap a:hover, .aboutcell a:hover {
-  color: #999;
+  color: #b4b4b4;
   transition: .125s ease-out;
 }
 
@@ -258,12 +258,12 @@ text-align: center;
 }
 
 a.workcell h3:hover {
-  color: #cdcdcd;
+  color: #b4b4b4;
   transition: .125s ease-out;
 }
 
 a.workcell h5:hover {
-  color: #999999;
+  color: #b4b4b4;
   transition: .125s ease-out;
 }
 
@@ -321,38 +321,41 @@ a.workcell h5:hover {
 
 /***** CONTACT *****/
 #contact {
-  background-color: #fff;
-  color: #999;
-  padding-top: 30px;
+  background-color: #dadada;
+  color: #6d6d6d;
+  padding-top: 60px;
   box-sizing: border-box;
   font-size: 0;
+  padding-bottom: 60px;
 }
 
 
 #contact a {
-  color: #999;
+  color: #1a3e89;
   text-decoration: none;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 section#contact h2 {
   text-align: center;
-  font-weight: 300;
-  line-height: 2rem;
-  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  font-size: 1.525rem;
 }
 
 .social_links {
   text-align: center;
-
+  display: flex;
+  justify-content: space-around;
+  max-width: 300px;
+  margin: 0 auto;
 }
 
 .social_links a {
   height: 50px;
   width: 50px;
   border-radius: 100%;
-  display: inline-block;
-  margin: 0 10px 30px;
+  margin-bottom: 30px;
 }
 
 .contact_direct {
@@ -376,17 +379,20 @@ section#contact h2 {
 }
 
 .social_links a i.fa, .social_links a i.fab, .social_links a i.fas {
-  font-size: 30px;
+  font-size: 40px;
   padding:10px;
   color: #6d6d6d;
 }
 
+.bottom-content {
+  background-color: #dadada;
+}
 
 /***** FOOTER *****/
 footer {
   padding: 20px 0;
   text-align: center;
-  background-color: #cdcdcd;
+  background-color: #fff;
 }
 
 footer img {
@@ -397,7 +403,7 @@ footer img {
 
 footer h6 {
   color: #1a3e89;
-  font-weight: 300;
+  font-weight: 400;
   border: 0;
   font-size: .9rem;
 }
@@ -503,7 +509,8 @@ nav a {
 
 #hero h6 {
   font-weight: 400;
-  padding-top: 25px;
+  padding-top: 20px;
+  font-size: 1.25rem;
 }
 
 /* PORTFOLIO */
@@ -667,7 +674,12 @@ nav a {
   height: auto;
   align-items: center;
   justify-content: center;
-  padding-top: 140px;
+  padding-top: 160px;
+  padding-bottom: 0;
+}
+
+.social_links {
+  padding-bottom: 30px;
 }
 
 .social_links a {
@@ -681,11 +693,10 @@ nav a {
 .social_links a i.fa, .social_links a i.fab, .social_links a i.fas {
   font-size: 40px;
   padding:10px;
-  color: #6d6d6d;
 }
 
 section#contact h2 {
-  line-height: 2rem;
+  line-height: 1.75rem;
 
 }
 
@@ -697,13 +708,13 @@ footer h6 {
 
 @media screen and (min-width: 1040px) {
   #contact {
-    padding-top: 90px
+    padding-top: 120px
   }
 }
 
 @media screen and (min-width: 1200px) {
   #contact {
-    padding-top: 70px
+    padding-top: 80px
   }
 
   #work {
