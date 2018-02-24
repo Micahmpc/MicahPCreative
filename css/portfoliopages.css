@@ -1,4 +1,9 @@
 /* MODS TO GLOBAL */
+.fixed-nav {
+  position: fixed;
+  top:0;
+  z-index: 1000;
+}
 
 /* PORTFOLIO PAGE STYLES*/
 .portfolio_content section.content.aboutmepage h6:last-of-type {
