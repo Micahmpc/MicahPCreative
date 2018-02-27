@@ -13,11 +13,18 @@ window.onscroll = function(e) {
   var offset = window.pageTOffset;
   readout.innerHTML = stickPoint + ' ' + distance + ' ' + offset + ' ' + stuck;
 
-  if((distance <= 90) && !stuck) {
-    h.style.position = "fixed";
+  if(window.innerWidth < 768 && distance <= 130 && !stuck) {
+    h.style.position = 'fixed';
+    h.style.top = '60px';
+    stuck = true;
+  }
+
+  if(window.innerWidth >= 768 && distance <= 90 && !stuck) {
+    h.style.position = 'fixed';
     h.style.top = '90px';
     stuck = true;
   }
+
   else if (stuck && (offset <= stickPoint)) {
     h.style.position = 'static';
     stuck = false;

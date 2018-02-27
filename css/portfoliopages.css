@@ -109,6 +109,10 @@
   transition: .125s ease-out;
 }
 
+.portfolio_content .page-nav a:active, {
+  color:#b4b4b4;
+}
+
 .portfolio_content section.content h4 {
   width: 90%;
   margin:30px auto 0;
@@ -117,7 +121,7 @@
 }
 
 .portfolio_content section.content h4:first-of-type {
-  margin:15px auto 0;
+  margin:30px auto 0;
 }
 
 .portfolio_content section.content h5 {
@@ -172,6 +176,7 @@
   padding-right: 1.5rem;
   position: relative;
   top: -3px;
+  z-index: -10;
 
 }
 
