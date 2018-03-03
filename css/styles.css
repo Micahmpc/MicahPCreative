@@ -1,10 +1,11 @@
 /***** GLOBAL STYLES *****/
+
 html {
   -webkit-font-smoothing: antialiased;
 }
 
 body {
-  font-family: 'Roboto', 'Arial', sans-serif;
+  font-family: 'Kanit', 'Arial', sans-serif;
   background-color: #fff;
 }
 
@@ -83,8 +84,11 @@ p {
 .nodesk {display: inherit;}
 
 
+
+
+
 /***** NAVIGATION *****/
-nav .navwrap {
+/* nav .navwrap {
   padding: 10px 20px;
   display: block;
   position: fixed;
@@ -140,40 +144,165 @@ nav a {
 nav .navwrap a img {
   height: 40px;
 }
+ */
+
+
+/***** HAMBURGER NAVIGATION **/
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700,900);
+
+
+body {
+    transition: background-color .5s;
+}
+
+.navigation {
+    width: 100%;
+      margin: 0 auto;
+    position: fixed;
+    z-index: 100000;
+    top: 0;
+    left: 0;
+    background-color: none;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+    padding-top: 0px;
+}
+
+.navigation a {
+    text-decoration: none;
+}
+
+.navigation ul {
+  padding-top: 165px;
+  text-align:center;
+  list-style:none;
+
+}
+
+
+.menulist {
+  padding-top:5px;
+}
+
+.line1, .line2, .line3 {
+  margin-top:5px;
+  background-color:#fff;
+  width:25px;
+  height:3px;
+  display:block;
+  position:relative;
+  opacity:1.0;
+  border-radius:15%;
+  transition: all .3s;
+}
+
+.line1 {
+  margin-top: 0;
+}
+
+.line1.active {
+  transform: rotate(270deg);
+  opacity:0.0;
+  background-color:#999999;
+  top:5px;
+}
+
+.line2.active {
+  transform: rotate(45deg);
+  background-color:#999999;
+}
+
+.line3.active {
+  transform: rotate(-45deg);
+  background-color:#999999;
+  top:-7px;
+}
+
+.menuitems {
+    padding-bottom:30px;
+    text-decoration: none;
+    list-style:none;
+    font-weight: 300;
+    font-size: 24px;
+    display: inline-block;
+    position:relative;
+    text-align:center;
+    color: #fff;
+    opacity:0.0;
+    transition: all .5s ease-in-out;
+}
+
+.menuitems:after {
+  content:'';
+  display:block;
+  width: 0;
+  height: 1px;
+  background: #fff;
+  transition: width .2s;
+}
+
+.menuitems:hover::after {
+    width:100%;
+}
+
+#closebtn {
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #1a3e89;
+    position: absolute;
+    text-decoration:none;
+    top: 10px;
+    left: 10px;
+    font-size: 36px !important;
+    z-index:1000000;
+    color:#fff;
+    cursor:pointer;
+    trainsition:background-position .3s;
+    box-shadow: 2px 2px 3px rgba(0,0,0,.5);
+}
+
+#shadowboxer {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+}
+
+nav img {
+  width: 60px;
+  height: auto;
+}
+
+/***** END HAMBURGER NAVIGATION **/
 
 
 
 /***** BODY *****/
 .container {
   margin:0 auto;
-  padding-top: 60px;
+  /* padding-top: 60px; */
 }
 
 
 
 /***** HERO CELL *****/
 #hero {
-  background-image: url(../assets/images/homepage/hero-background_mob.jpg);
+  background-image: url(../assets/images/homepage/hero-background_1.jpg);
   background-position: center;
   background-size: cover;
-  height: 275px;
+  height: 100%;
   text-align: center;
-  color: #1A3E89;
-}
-
-#hero h1, #hero h5 {
-  text-shadow: 1px 2px 4px #fff;
+  color: #fff;
 }
 
 #hero h2 {
   padding-top: 75px;
 }
 
-#hero h6 {
-  font-weight: 400;
-  padding-top: 5px;
-  font-size: .9rem;
-}
 
 /***** CONTENT CONTAINER *****/
 .content-container {
@@ -188,7 +317,7 @@ nav .navwrap a img {
 }
 
 .content-container .hp-section-title h3 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 400;
   color: #1a3e89;
   padding-bottom: 5px;
@@ -282,9 +411,9 @@ a.workcell h5:hover {
 /***** TESTIMONIALS *****/
 #testimonials {
   text-align: center;
-  padding: 30px;
   background-color: #1a3e89;
   color: #999999;
+  width: 100%;
 }
 
 #testimonials i {
@@ -307,7 +436,7 @@ a.workcell h5:hover {
   margin-top: 25px;
   padding-bottom: 10px;
   font-size: 1.25rem;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 #testimonials h6 {
@@ -384,10 +513,6 @@ section#contact h2 {
   color: #6d6d6d;
 }
 
-.bottom-content {
-  background-color: #dadada;
-}
-
 /***** FOOTER *****/
 footer {
   padding: 20px 0;
@@ -419,7 +544,7 @@ footer h6 {
 
 /* GLOBAL */
 h1 {
-  font-size: 6rem;
+  font-size: 6.5rem;
   line-height: 6rem;
 }
 
@@ -458,9 +583,9 @@ p {
   display: none;
 }
 
-.container {
+/* .container {
   padding-top: 90px;
-}
+} */
 
 nav .navwrap {
   height: 90px;
@@ -473,15 +598,11 @@ nav .navwrap a img {
 
 nav .navright h3 {
   line-height: 1.5rem;
-  font-size: 1.4rem;
+  font-size: 1.25rem;
 }
 
 nav ul {
   padding-top: 20px;
-}
-
-nav ul li {
-  padding-left: 22px;
 }
 
 nav a {
@@ -489,28 +610,33 @@ nav a {
 }
 
 /* HERO */
+
 #hero {
-  background-image: url(../assets/images/homepage/hero-background.jpg);
-  background-position: center;
-  background-size: cover;
-  height: 400px;
+  background-image: url(../assets/images/homepage/hero-background_1.jpg);
   text-align: center;
-  color: #1A3E89;
+  color: #fff;
+  height:600px;
+  background-size: cover;
 }
 
-#hero h2 {
-  padding-top: 85px;
+#hero h1 {
+  text-shadow: 6px 6px 10px rgba(0,0,0,.75);
+}
+
+#hero h3 {
+  padding-top: 186px;
   padding-bottom: 5px;
+  text-transform: uppercase;
+  font-size: 1.125rem;
 }
 
 #hero h5 {
-  font-size: 2rem;
-}
-
-#hero h6 {
-  font-weight: 400;
-  padding-top: 20px;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
+  padding-top: 10px;
+  font-weight: 300;
+  max-width: 645px;
+  margin: 0 auto;
+  line-height: 2rem;
 }
 
 /* PORTFOLIO */
@@ -521,7 +647,7 @@ nav a {
 .content-container .hp-section-title {
   width: 80%;
   max-width: 800px;
-  margin:20px auto;
+  margin:100px auto 30px;
 }
 
 .content-container .hp-section-title h3 {
@@ -566,8 +692,8 @@ nav a {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(10, 150px);
-    grid-gap: 5px;
-    border-bottom: 20px solid #fff;
+    grid-gap: 2px;
+    margin-bottom: 100px;
     margin-left: auto;
     margin-right: auto;
     max-width: 94%;
@@ -642,22 +768,28 @@ nav a {
   font-size: 0;
   display: table-cell;
   height: 100%;
+  width: 100%;
   vertical-align: middle;
 }
 
 /* TESTIMONIALS */
 #testimonials {
   text-align: center;
-  padding: 40px;
-  width: 50%;
+  position:absolute;
+  left: 0;
+  right: 0;
   box-sizing: border-box;
   font-size: 0;
   display: inline-block;
+  padding: 100px 0;
+  background-color:#1a3e89;
 }
 
-#testimonials p {
-  padding: 8% 40px;
+#testimonials .testimonials p {
+  padding: 40px 15%;
   line-height: 1.75rem;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 #testimonials h5 {

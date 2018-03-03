@@ -19,9 +19,10 @@ window.onscroll = function(e) {
     stuck = true;
   }
 
-  if(window.innerWidth >= 768 && distance <= 90 && !stuck) {
+  if(window.innerWidth >= 768 && distance <= 100 && !stuck) {
     h.style.position = 'fixed';
-    h.style.top = '90px';
+    h.style.top = '0';
+    h.style.zindex = '100000000'; 
     stuck = true;
   }
 

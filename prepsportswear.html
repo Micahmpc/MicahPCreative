@@ -12,21 +12,26 @@
     <link rel="stylesheet" type="text/css" href="css/portfoliopages.css">
   </head>
 <body>
+  <!-- Hamburger Nav -->
   <nav id="top">
-    <div class="navwrap">
-      <a href="index.html">
-        <img src="assets/images/homepage/mp-logo.svg" alt="@micahmpc">
-      </a>
-      <div class="navright">
-        <a href="index.html"><h3>Micah Parker <span class="grey1 t400">//</span> <span class="grey2 t400">Designer</span></h3></a>
-        <ul>
-          <li><a href="about.html">About</a></li>
-          <li><a href="index.html#work">Work</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
+    <div id="topNav" class="navigation">
+      <span id="closebtn" onclick="navToggle()">
+          <span class="line1"></span>
+          <span class="line2"></span>
+          <span class="line3"></span>
+      </span>
+      <ul class="menulist">
+        <li><a class="menuitems" href="index.html"><img src="assets/images/homepage/mp-logo.svg" alt=""></a></li>
+        <li><a class="menuitems" href="about.html">ABOUT</a></li>
+        <li><a class="menuitems" href="index.html#work">PORTFOLIO</a></li>
+        <li><a class="menuitems" target="_blank" href="assets/images/pages/resume/micahparker_designer.pdf">RESUME</a></li>
+
+      </ul>
     </div>
   </nav>
+  <div id="shadowboxer">
+  </div>
+  <!-- Content -->
   <div class="container">
     <div class="portfolio_content">
       <section class="hero" style="background: url(assets/images/pages/prepsportswear/prepsportswear_hero_dark.jpg);">
@@ -69,7 +74,7 @@
 
 
         <!--  Micah - Editing Paused Here  -->
-        
+
         <h6>Design Management</h6>
         <p>Another job I had was to clean up and manage our designs. I was responsible for creating a good number of the design throughout the site, as well as some of the iconography. At one point I created a whole new set of our top 25 mascot icons (Lions, Tigers, Bears, Oh MY!). This was because most of our icons were "soft", and this was in the early days of Nike vs. Under Armour where apparel designs were getting sharper and tougher looking. So we labeled this one the "fierce" collection. They sold decently.
         </p>
@@ -193,6 +198,9 @@
     </footer>
   </div>
 
+
+  <script src="scripts/projects.js"></script>
+  <script src="scripts/global.js"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111622996-1"></script>
   <script>
