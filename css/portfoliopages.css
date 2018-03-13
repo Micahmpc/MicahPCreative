@@ -33,7 +33,7 @@
 
 .portfolio_content .hero h2 {
   padding-bottom: 2px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .portfolio_content section.hero {
@@ -149,7 +149,7 @@
 .portfolio_content section.content p a {
   color: #1a3e89;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .portfolio_content section.content p a:hover {
@@ -191,6 +191,7 @@
 
 .portfolio_content section.content h5.quotable {
   font-style: italic;
+  font-weight: 400;
   width: 75%;
   margin: 15px auto 40px;
   text-align: center;
@@ -251,7 +252,7 @@ font-size: 1.5rem;
 
 .portfolio_content section.content h6 a {
   color: #1A3E89;
-  font-weight: 700;
+  font-weight: 600;
   text-decoration: none;
   text-align: center;
   font-size: 1.25rem;
@@ -419,7 +420,7 @@ a .next-proj {
   }
 
   .portfolio_content section.content .illustration-mockup img {
-    max-width: 700px;
+    max-width: 600px;
     margin: 0 auto;
   }
 

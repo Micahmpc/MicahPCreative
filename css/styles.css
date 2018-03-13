@@ -118,7 +118,7 @@ nav .navright {
 }
 
 nav .navright h3 {
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1rem;
 }
 
@@ -148,8 +148,6 @@ nav .navwrap a img {
 
 
 /***** HAMBURGER NAVIGATION **/
-
-@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700,900);
 
 
 body {
@@ -204,18 +202,18 @@ body {
 .line1.active {
   transform: rotate(270deg);
   opacity:0.0;
-  background-color:#999999;
+  background-color:#cdcdcd;
   top:5px;
 }
 
 .line2.active {
   transform: rotate(45deg);
-  background-color:#999999;
+  background-color:#cdcdcd;
 }
 
 .line3.active {
   transform: rotate(-45deg);
-  background-color:#999999;
+  background-color:#cdcdcd;
   top:-7px;
 }
 
@@ -326,6 +324,8 @@ nav img {
 .content-container .hp-section-title h6 {
   font-weight: 300;
   color: #3d3d3d;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 
@@ -352,7 +352,7 @@ text-align: center;
   width: 150px;
   text-align: center;
   padding: 0 20px;
-  margin: 0 auto 20px;
+  margin: 0 auto;
   border-radius: 100%;
 }
 
@@ -436,7 +436,7 @@ a.workcell h5:hover {
   margin-top: 25px;
   padding-bottom: 10px;
   font-size: 1.25rem;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 #testimonials h6 {
@@ -450,7 +450,7 @@ a.workcell h5:hover {
 
 /***** CONTACT *****/
 #contact {
-  background-color: #dadada;
+  background-color: #fff;
   color: #6d6d6d;
   padding-top: 60px;
   box-sizing: border-box;
@@ -467,9 +467,19 @@ a.workcell h5:hover {
 
 section#contact h2 {
   text-align: center;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 1.5rem;
-  font-size: 1.525rem;
+  font-size: 1.5rem;
+  color: #1a3e89;
+}
+
+section#contact .contact_direct_cell h2 {
+  display: inline-block;
+}
+
+section#contact i {
+  font-size: 30px;
+  display: inline-block;
 }
 
 .social_links {
@@ -481,49 +491,69 @@ section#contact h2 {
 }
 
 .social_links a {
-  height: 50px;
-  width: 50px;
   border-radius: 100%;
-  margin-bottom: 30px;
+}
+
+section#contact .social_links i {
+  font-size: 35px;
 }
 
 .contact_direct {
   text-align: center;
-  padding: 20px;
+}
+
+.contact_direct_cell {
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.contact_direct_cell a {
+    padding: 10px;
+    text-align: center;
+    margin: 0 20px;
+}
+
+.contact_direct_cell .fas {
+  line-height: 1.9rem;
+  position: relative;
+  top: 2px;
+  right: -1px;
 }
 
 .contact_direct a {
   display: block;
-  padding-bottom: 15px !important;
   font-size: 1.075rem;
+  border: 1px solid #1a3e89;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
 }
 
-.contact_direct a i.fa, .contact_direct a i.fas, .contact_direct a i.fab {
-  padding-right: 10px;
-  font-size: 15px;
+.contact_direct h2:first-child {
+  padding:20px 60px;
 }
 
-.contact_direct a:last-child {
-  padding-bottom: 0 !important;
-}
-
-.social_links a i.fa, .social_links a i.fab, .social_links a i.fas {
+.social_links a i {
   font-size: 40px;
-  padding:10px;
-  color: #6d6d6d;
+  color: #3d3d3d;
+}
+
+.social_links a i:hover {
+  color: #999999;
+  transition: .125s ease-out;
 }
 
 /***** FOOTER *****/
 footer {
-  padding: 20px 0;
+  padding: 20px 0 30px;
   text-align: center;
-  background-color: #fff;
+  background-color: #ededed;
 }
 
 footer img {
   margin: 0 auto;
-  width: 40px;
-  padding-bottom: 10px;
+  width: 32px;
+  padding-top: 30px;
 }
 
 footer h6 {
@@ -691,7 +721,7 @@ nav a {
   #work {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(10, 150px);
+    grid-template-rows: repeat(8, 150px);
     grid-gap: 2px;
     margin-bottom: 100px;
     margin-left: auto;
@@ -732,31 +762,21 @@ nav a {
 
   .workcell:nth-child(2) {
     grid-column-end: span 3;
-    grid-row-end: span 2;
+    grid-row-end: span 3;
   }
 
   .workcell:nth-child(3) {
     grid-column-end: span 3;
-    grid-row-end: span 2;
+    grid-row-end: span 3;
   }
 
   .workcell:nth-child(4) {
     grid-column-end: span 4;
-    grid-row-end: span 3;
+    grid-row-end: span 2;
   }
 
   .workcell:nth-child(5) {
     grid-column-end: span 2;
-    grid-row-end: span 3;
-  }
-
-  .workcell:nth-child(6) {
-    grid-column-end: span 2;
-    grid-row-end: span 2;
-  }
-
-  .workcell:nth-child(7) {
-    grid-column-end: span 4;
     grid-row-end: span 2;
   }
 
@@ -766,7 +786,6 @@ nav a {
 
 .bottom-content {
   font-size: 0;
-  display: table-cell;
   height: 100%;
   width: 100%;
   vertical-align: middle;
@@ -775,14 +794,11 @@ nav a {
 /* TESTIMONIALS */
 #testimonials {
   text-align: center;
-  position:absolute;
-  left: 0;
-  right: 0;
   box-sizing: border-box;
   font-size: 0;
-  display: inline-block;
   padding: 100px 0;
   background-color:#1a3e89;
+  width: 100%;
 }
 
 #testimonials .testimonials p {
@@ -800,36 +816,28 @@ nav a {
 #contact {
   vertical-align: top;
   box-sizing: border-box;
-  display: inline-flex;
-  width: 50%;
   font-size: 0;
   height: auto;
   align-items: center;
   justify-content: center;
-  padding-top: 160px;
-  padding-bottom: 0;
+  padding: 40px 0;
 }
 
-.social_links {
-  padding-bottom: 30px;
-}
 
 .social_links a {
-  height: 50px;
-  width: 50px;
   border-radius: 100%;
   display: inline-block;
-  margin: 0 15px;
-}
-
-.social_links a i.fa, .social_links a i.fab, .social_links a i.fas {
-  font-size: 40px;
-  padding:10px;
+  padding: 10px 15px;
 }
 
 section#contact h2 {
-  line-height: 1.75rem;
+  line-height: 1.25rem;
+  position: relative;
+  top: -3px;
+}
 
+section#contact .social_links a i {
+  font-size: 32px;
 }
 
 footer h6 {
@@ -838,16 +846,8 @@ footer h6 {
 
 }
 
-@media screen and (min-width: 1040px) {
-  #contact {
-    padding-top: 120px
-  }
-}
 
 @media screen and (min-width: 1200px) {
-  #contact {
-    padding-top: 80px
-  }
 
   #work {
     width: 94%;
