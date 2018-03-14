@@ -7,7 +7,7 @@
 
 /* PORTFOLIO PAGE STYLES*/
 .portfolio_content section.content.aboutmepage h6:last-of-type {
-  margin: 50px 20px 30px;
+  margin: 50px auto 30px;
   text-align: center;
 }
 
@@ -18,6 +18,10 @@
 
 .portfolio_content section.aboutmepage h6 a:last-child {
   border-right: none;
+}
+
+.portfolio_content section.aboutmepage {
+  padding: 40px 0;
 }
 
 .portfolio_content section.content {
@@ -177,7 +181,6 @@
   position: relative;
   top: -3px;
   z-index: -10;
-
 }
 
 .study {

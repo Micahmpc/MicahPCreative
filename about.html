@@ -35,6 +35,10 @@
   <div class="container">
     <div class="portfolio_content">
       <section class="content aboutmepage">
+        <div class="contact-avatar">
+          <img src="assets/images/homepage/avatar_2.jpg" alt="Micah" onmouseover="rollover(this)" onmouseout="mouseaway(this)">
+        </div>
+
         <h4>Micah Parker</h4>
         <h5>Product & Experience Designer | Architect and Strategist</h5>
 
@@ -44,7 +48,10 @@
         </p>
 
         <p>
-          I'm a multitalented designer and strategist with a background in user experiences, web interfaces and full sites, branding, and marketing among other things. In my free time, I pursue hobbies like woodworking in my home shop, and fishing where the bite is good (or not so much). It's incredibly gratifying when you are able to master something to the point of habit, allowing you to keep reaching further into expertise and progression. I think the best feeling in the world is conquering a challenge. Through design, I'm able to create systems and strategies that solve problems for the user, and in a way that can be easily managed through streamlined processes.
+          I'm a multitalented designer and strategist with a background in user experiences, web interfaces and full sites, branding, and marketing among other things. In my free time, I pursue hobbies like woodworking in my home shop, and fishing where the bite is good (or not so much).
+        </p>
+        <p>
+          I find it incredibly gratifying when you are able to master something to the point of habit, allowing you to keep reaching further into expertise and further progression. I think the best feeling in the world is conquering a challenge. Through design, I'm able to create systems and strategies that solve problems for the user, and in a way that can be easily managed through streamlined processes.
         </p>
         <p>
           I have a background stemming from a young age in art and design. In high school I pursued drawing, painting, and photography, and my junior year became involved in glassblowing and volunteered by helping out with classes for community service, and on their production team under the guidance of my glassblowing mentor - who taught me a lot about life as well as art. Like a classic coming-of-age drama.
@@ -70,13 +77,29 @@
           To design and build products and solutions that provide answers to problems. To always seek more information in order to learn, iterate, and improve. To create strategies for approach and execution, as well as design and positioning. And to take pride in my work - as it reflects not only on the product itself but on me and the teams I represent as well.
         </p>
 
-        <h6><a href="index.html#work">Portfolio</a><a href="assets/images/pages/resume/micahparker_designer.pdf" target="_blank">Resume</a></h6>
+        <!--
+        <h6><a href="index.html#work">Portfolio</a><a href="assets/images/pages/resume/micahparker_designer.pdf" target="_blank">Resume</a></h6> -->
 
       </section>
 
-
-
-
+      <div class="next-proj-block">
+        <div class="cell">
+          <a href="index.html#work">
+            <div class="last-proj">
+              <h6><i class="fas fa-backward" style="padding-right: 5px;"></i></h6>
+              <h3>Portfolio</h3>
+              <p>view case studies</p>
+              </div>
+          </a>
+          <a href="assets/images/pages/resume/micahparker_designer.pdf" target="_blank">
+            <div class="next-proj">
+              <h6><i class="fas fa-forward" style="padding-left: 5px;"></i></h6>
+              <h3>Resume</h3>
+              <p>click here to view</p>
+            </div>
+          </a>
+        </div>
+      </div>
     </div>
 
 
@@ -126,6 +149,20 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-111622996-1');
+</script>
+
+  <script type="text/javascript">
+
+  function rollover(my_image)
+    {
+      my_image.src = "assets/images/homepage/avatar_secret_2.jpg";
+    }
+
+    function mouseaway(my_image)
+    {
+      my_image.src = 'assets/images/homepage/avatar_2.jpg';
+    }
+
 </script>
 
 </body>
