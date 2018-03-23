@@ -73,7 +73,7 @@ p {
 }
 
 .center {
-  text-align: center;
+  text-align: center !important;
   margin: 0 auto;
 }
 
@@ -81,9 +81,21 @@ p {
   display: none;
 }
 
-.nodesk {display: inherit;}
+.nodesk {
+  display: inherit;
+}
 
+.txt300 {
+    font-weight: 300 !important;
+}
 
+.txt400 {
+    font-weight: 400 !important;
+}
+
+.txt600 {
+    font-weight: 600 !important;
+}
 
 
 
@@ -612,7 +624,7 @@ h6 {
 }
 
 p {
-  font-size: 1.075rem;
+  font-size: 1.125rem;
 }
 
 .nomobile {
@@ -664,7 +676,6 @@ nav a {
 }
 
 #hero h3 {
-  padding-top: 186px;
   padding-bottom: 5px;
   text-transform: uppercase;
   font-size: 1.125rem;
@@ -687,13 +698,14 @@ nav a {
 .content-container .hp-section-title {
   width: 80%;
   max-width: 800px;
-  margin:100px auto 30px;
+  margin:100px auto 20px;
 }
 
 .content-container .hp-section-title h3 {
   padding-bottom: 15px;
   line-height: 2.5rem;
   font-size: 3rem;
+  font-weight: 200;
 }
 
   #work, #about {

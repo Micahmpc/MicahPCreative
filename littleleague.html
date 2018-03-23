@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta charset="UTF-8">
     <title>Micah Parker - UX | UI | Visual | Development | Branding</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kanit:200,300,300i,400,400i,600" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link href="css/fontawesome-all.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -29,135 +29,195 @@
       </ul>
     </div>
   </nav>
-  <div id="shadowboxer">
-  </div>
   <!-- Content -->
-  <div class="container">
+  <div class="container" id="littleleaguepage">
     <div class="portfolio_content">
       <section class="hero" style="background: url(assets/images/pages/littleleague/littleleague_hero.jpg);">
         <div class="title">
           <h2>Little League / Russell Athletic</h2>
-          <h3><i>e</i>-Commerce that gives back</h3>
+          <h3><i>e</i>-commerce and fundraising solution</h3>
           <p>UI Design & Development | UX Design & Strategy | Architecture</p>
           <h3><a href="http://youthsports.prepsportswear.com" target="_blank"><i class="fas fa-link"></i></a></h3>
         </div>
       </section>
 
-      <!-- <div id="page-nav-block" class="page-nav-block">
-        <div class="page-nav">
-          <a href="#sec1">Background</a>
-          <p>|</p>
-          <a href="#sec2">Challenges</a>
-          <p>|</p>
-          <a href="#sec3">Process</a>
-          <p>|</p>
-          <a href="#sec4">Study</a>
+      <section class="content">
+        <div class="project-sect">
+          <h4>Summary</h4>
+          <p>
+            This project was for a partnership between Little League of America, Russell Athletic, and Prep Sportswear. We needed to built a new platform that was part fundraising and administrative management tool, and part e-commerce solution. The project was end-to-end, with some data dependancies on the previous system.
+          </p>
+          <div class="divider"></div>
         </div>
-      </div> -->
+
+        <div class="project-sect">
+          <h4>My Role</h4>
+          <p>
+            <span class="highlight-txt">UI Development</span> / Architecture & UX Process Consulting / Brand Design Management / Liaison between Design and Development teams
+          </p>
+          <div class="divider"></div>
+        </div>
+
+        <div class="project-sect">
+          <h4>Key Challenges</h4>
+          <p>
+            <span class="highlight-txt toupper">WHAT DOES A PRODUCT NEED TO EXIST FUNCTIONALLY?</span> What pieces of data were needed to create the the finished product for the user? What input was needed from the user to reach the finished product?
+          </p>
+          <p>
+            <span class="highlight-txt toupper">HOW DO YOU BUILD THE SOLUTION IN A WAY THAT'S INFINITELY SCALABLE?</span> What dependencies are needed, and how can we manage those without starting to tangle the wires?
+          </p>
+          <p>
+            <span class="highlight-txt toupper">WHAT IS THE MVP, AND HOW CAN WE DESIGN THAT AS WE BUILD?</span> What features are absolutely needed for the whole platform to work and satisfy basic user needs? With time as a major factor, how can we build efficiently to keep up with design changes?
+          </p>
+          <div class="twoup-img">
+            <img src="assets/images/pages/littleleague/planningboard_1.jpg" alt="">
+            <img src="assets/images/pages/littleleague/planningboard_2.jpg" alt="">
+          </div>
+          <div class="divider"></div>
+        </div>
+
+        <div class="project-sect">
+          <h4>Product Genetics</h4>
+          <p>
+            For our sake, a product must be made up of 3 main user-driven parts. The <span class="highlight-txt toupper">product SKU</span>, the <span class="highlight-txt toupper">store</span>, and the <span class="highlight-txt toupper">design</span>. Those peices are further broken up by internally created, and externally provided data, which needed to live somewhere but wasn't needed for the user. What we needed to decide was what the user-facing data pieces were, how they interacted with each other, and with the user. The data included color, product details like size and gender, store name, design type, etc.
+          </p>
+          <div class="oneup-img">
+            <img class="proj-sect-img" src="assets/images/pages/littleleague/prod_gen_venn.png" alt="">
+          </div>
+          <div class="study">
+            <h4>A STUDY OF PERCEPTIONS' EFFECTS ON SATISFACTION</h4>
+            <p>
+              A few months before we started the project the creative director and I decided to run a small study on how people perceive color in terms of a sports-based retail platform like ours, and how it can affect their satisfaction with our product. This was to explore <span class="highlight-txt">why customers who complained about a mismatch between their store colors and their shipped products were not satisfied with our output</span>.
+            </p>
+            <p>
+              We gave a handful of internal users - people who should be familiar with these colors - 2 different collections of data. The first, a number of swatches of different shades of red's, green's and blue's. The second, a number of color names pertaining to those shades of red. We asked users to simply match the names to the swatches. The control for this was that the colors were actually based on the names given to the swatches by some of our D1 school (again, trying to make it easier for the user to make the correct choice).
+            </p>
+            <p>
+              When we compared results, what <span class="highlight-txt">we found was we would have had more matches in sea of snowflakes</span>. There was almost no correlation between user-control and user-user decisions. Therefore, it followed that 100% accuracy was unreasonable, so we should <span class="highlight-txt">account for the variance rather than try to abolish error</span>.
+            </p>
+          </div>
+          <div class="divider"></div>
+        </div>
+
+        <div class="project-sect">
+          <h4>Scalable Code Management</h4>
+          <p>
+            The design and the development for this project were running in parallel due to time constraints. So, I was forced to build the front end inbetween the design going through it's phases (wireframes to PS mockups), and the back end team building out the data, cart, controls, etc. I also had to build a living style guide into the sites.
+          </p>
+          <p>
+            I challenged myself to build the site as I did the style guide. Therefore, when the design was changed, all I had to do was update the style guide. Obviously it wasn't completely as clean as it sounds, but it was extremely effective. By defining the lowest level design elements, I was able to build atomically up, reducing the amount of places a certain element lived.
+          </p>
+          <div class="callout-cell" style="background: rgb(0,83,159); background: -moz-linear-gradient(top, rgba(0,83,159,1) 0%, rgba(51,122,183,1) 100%); background: -webkit-linear-gradient(top, rgba(0,83,159,1) 0%,rgba(51,122,183,1) 100%); background: linear-gradient(to bottom, rgba(0,83,159,1) 0%,rgba(51,122,183,1) 100%);">
+            <div class="left">
+              <img src="assets/images/pages/littleleague/atomic.png" alt="">
+            </div>
+            <div class="right">
+              <h4>Atomic Design <i>(def)</i></h4>
+              <p>
+                Atomic design is methodology for creating design systems. There are five distinct levels in atomic design: <span style="font-size: 1.125rem; font-style:italic;">Atoms > Molecules > Organisms > Templates > Pages
+              </p>
+            </div>
+          </div>
+          <div class="center" style="padding-top: 70px;">
+            <img src="assets/images/pages/littleleague/atom.png" alt="">
+            <h5 class="center">atoms</h5>
+            <p class="center" style="margin: 0 auto;"><i>colors, typography, icons</i></p>
+          </div>
+          <div class="center" style="padding-top: 30px;">
+            <img src="assets/images/pages/littleleague/molecule.png" alt="">
+            <h5 class="center">molecules</h5>
+            <p class="center" style="margin: 0 auto;"><i>buttons, call-to-actions, form cells, links, hero images</i></p>
+          </div>
+          <div class="center" style="padding-top: 30px;">
+            <img src="assets/images/pages/littleleague/organism.png" alt="">
+            <h5 class="center">organisms</h5>
+            <p class="center" style="margin: 0 auto;"><i>forms, navigation, filters, design controls, footers</i></p>
+          </div>
+          <div class="divider"></div>
+        </div>
+      </section>
+
+      <div class="content-break center">
+        <img src="assets/images/pages/littleleague/fundraising_resp.png" alt="">
+      </div>
 
       <section class="content">
-        <h4 id="sec1">Background:</h4>
-        <p>Prep Sportswear formed a partnership with Little League of America and Russell Athletic to build a fundraising and e-commerce platform which all Little League leagues and teams would be migrated to for league and team management.
-        </p>
-        <p>
-        Little League wanted a platform that stored all their team/league data; had fundraising capabilities that tied into our licensed sales; and a linked e-commerce site that allowed customers to shop for custom licensed merchandise for their kids' teams and leagues (of which a portion of the sales went back into their fundraising account). Russell recently scored the Little League jersey contract, so the new site would feature primarily their brand of fan apparel.
-        </p>
-        <p>
-        We needed to re-platform our current site which was aging, so this was a great opportunity for us to rebuild a new system that could handle our future scalability needs, and was better suited for mobile shopping and the current state of the industry.
-        </p>
-        <div class="project-image">
-          <img src="assets/images/pages/littleleague/ys_league_desk.jpg" alt="Youth Sports Store Home">
-        </div>
-
-        <div id="sec2" class="section-nav-push"></div>
-        <h4>Challenges:</h4>
-        <ul>
-          <li>New architecture: Built for the future, tied to the past.</li>
-          <li>Improve task-flows and UI</li>
-          <li>Improve user-customization process</li>
-          <li>Handling of different parts of the platform (fundraising vs. e-commerce)</li>
-        </ul>
-
-        <div id="sec3" class="section-nav-push"></div>
-        <h4>Process:</h4>
-        <h6>New architecture: Built for the future, tied to the past.</h6>
-        <p>
-          A new platform meant new/improved data structures. Mapping for everything was needed - granual data pertaining to products, designs, and stores. What a "product" or SKU entailed was debated on. Was it deconstructed into a combination or string of all the data taken from the item being put into the cart? Or was it more encompassing like a distributors SKU - in which a single SKU included all sizes, colors, etc. into a single entity?
-        </p>
-        <p>
-          One difficult part was that there were minimum-viable-product and time considerations, so that meant building a system that was done right so we could build upon and scale it for the future, while also tying in data from the old site. With things like color - which actually became one of the most difficult to solve problems - we had to start fresh so I helped build the architecture of how products, designs and stores would handle color considerations. For other things like what a SKU actually was, we had to take more of a bridging the gap approach, omitting pieces of data, replacing them with new structures, and in some cases having to go all the way backward and update on the old site as well just so both sites worked properly.
-        </p>
-
-        <div class="project-image">
-          <img src="assets/images/pages/littleleague/color_schema.jpg" alt="Youth Sports Homepage">
-        </div>
-
-        <div id="sec4" class="section-nav-push"></div>
-        <div class="study">
-          <h6>A Study on Perception</h6>
+        <div class="divider"></div>
+        <div class="project-sect">
+          <h4>How did the system function?</h4>
           <p>
-            A few months before we started the project my creative director and I - when I was working as a design architect/graphic designer on her team - ran a small study on how people perceive color in terms of a sports-based platform like ours.
+            The essential flow of information was as follows. Little League would send all league admins or team managers an access code at the start of a season (one-use token for single-source data). He or she would set up the store in the fundraising/management site by filling in the information required by us. Name, stores colors, location, league, etc., and an ACH form for fundraising payments. This generated a link to their newly created e-commerce site for them to share with all team members, mailing-list members, whatever. Teams/leagues also being searchable from the homepage. A percentage of the sales from the e-commerce site would go back into that stores fundraising account, to be used as the administrator saw fit.
           </p>
           <p>
-            We gave a handful of people 2 different printouts, one page with a number of different shades of red, and the other with green. Both sheets had a number of color names we found in our database like "crimson" and "cardinal" (colors associated with major D1 schools). We asked the participants to match the names with the swatches they believed they belonged to. This study came out of a top-prio request I recieved from upper management to "ensure we're printing the right colors" according to individual store data.
+            The point being, since they had to now buy their gear exclusively from us (holding the sole license to branded Little League apparel), it created a closed system for goods. If they wanted custom fan gear for their kids team, they had to get it from us, but they'd get money back for the team as well.
+          </p>
+        </div>
+        <div class="project-sect center nomobile" style="margin:70px 0;">
+          <img class="center" src="assets/images/pages/littleleague/data-in.png" alt="">
+          <div class="cycle-graphic">
+            <div class="left">
+              <div>
+                <h5 class="center">Fundraising</h5>
+                <ul>
+                  <li>Vetting Process for fundraising access</li>
+                  <li>create/modify store data</li>
+                </ul>
+              </div>
+            </div>
+            <div class="right">
+              <div>
+                <h5 class="center">Retail</h5>
+                <ul>
+                  <li>Store-defined limited offering</li>
+                  <li>Anyone can sign up and buy</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <img class="center" src="assets/images/pages/littleleague/money-back.png" alt="">
+        </div>
+      </section>
+
+      <div class="content-break center marg-bottom50 marg-bottom150" style="background-color: #00539f;">
+        <img class="top20 top100" src="assets/images/pages/littleleague/web-presentation.png" alt="">
+      </div>
+
+      <div class="content-break center branding">
+        <div>
+            <img src="assets/images/pages/littleleague/palette.png" alt="">
+        </div>
+        <div style="padding-top:30px;">
+            <img src="assets/images/pages/littleleague/grid.png" alt="">
+        </div>
+      </div>
+
+      <section class="content">
+        <div class="project-sect">
+          <div class="divider"></div>
+
+          <h4>Key Takeaways</h4>
+          <p class="txt600">
+            Successes
           </p>
           <p>
-            The results? We would have had more matches in sea of snowflakes. Not only did practically no one write the same name on a certain swatch, but no one chose the correct name that the particular swatches actually pertained to of the D1 schools (our control for this experiment).
+            We released the two websites in MVP form, with a clean and simple interface that was intuitive and solved many of the problems the old system had. Data structures were still in their infancy, but were built with base structures that would support added data points as the system grew and began including a more full data set.
           </p>
           <p>
-            I mention this because we used it to help guide our decisions about the new system. We couldn't please everyone all the time because perceptions simply vary too much, so we needed to account for that variance and create processes to minimize error.
+            Building it atomically also made the code super easy to manage, and gave the design team more freedom to add features and change things.
           </p>
+          <p class="txt600">
+            Lessons Learned
+          </p>
+          <p>
+            This project was perhaps more difficult than it needed to be. It highlighted the need for a standard workflow and process through the stages. Because the architecture was being build in parallel to the design, there were a lot of incongruencies between the front and back ends.
+          </p>
+          <p>
+            I personally learned a lot of how to work with and manage large repositories of code, and how to effectively break down pieces of a system to more easily manage the parts that make up the whole.
+          </p>
+
+          <div class="divider"></div>
+
         </div>
-
-        <div class="project-image">
-          <img src="assets/images/pages/littleleague/planningboard.jpg" alt="Youth Sports Homepage">
-        </div>
-
-        <h6>Improve task-flows and UI</h6>
-        <p>
-          Task flows were a hot topic of debate. How did the customer get from signing up for a league in Arizona, end up on our site buying shirts and shorts? How did the league admin gain access to league data, and what happens next year when there's a new league admin? In the landing-to-purchase path, we could have reinvented the wheel to mimic more our competitors model, but that would have removed some of our strengths in exchange. We stuck with the old model, but simplified it by combining some of the steps of the old system.
-        </p>
-        <p>
-          I was the UI developer for the project so I wrote all the HTML and CSS for the sites. I had some wiggle room on styling as long as I stuck to the layouts from our UI designer, and I also was given the reigns to create the style guide. I started building it in an atomic fashion, first nailing down the atom level elements like fonts and colors, and building molecules like form fields and buttons and grids. I didn't make it all the way up since there wasn't time, but the new site was so much more legible and cohesively branded.
-        </p>
-        <p>
-          We ran a CSS test on the old site that crawls your code and generates a list of unique elements and properties. There was something like 200 colors, 65 font sizes, etc. So I made it my goal in writing the CSS to limit myself in such areas. I had 14 font sizes I could use (h1-h6 and p, with an "alt" modifier I could plug into the html element), about 6 or 8 colors total, and limited my options for things like padding sizes and adding new classes. The best part? Changes were incredibly easy, and only needed to be made in one place (for the most part). Transitioning to SASS was the next step however I left the project before that happened.
-        </p>
-
-        <h6>Improve user-customization process</h6>
-        <p>
-          Our platform was built on the ability to manufacture 1-off custom apparel. That meant the user was dropped into a store (of their choosing), and could design their own product from a series of pre-defined options. Product, product color, design, text, text color, etc. So one of the things we wanted to do with the new platform was to create a better system for filtering which enabled the user to make many of the choices as they went, versus mostly on the final "design" page. Seems normal enough, but with the old system, it was not. It just wasn't how the processes were built at that time.
-        </p>
-        <p>
-          Our solution was to provide the option to the user sooner. That way, if a user knew what they wanted - at least somewhat - by the time they got the final page before checkout, there was less work to do to complete their goal of creating something they wanted and buying it. Less tasks all at once = less user frustration = more willingness click that magical checkout button. I worked with our designer and developers to figure out what our MVP's were for the initial release, and then built it out.
-        </p>
-        <div class="device-mockup">
-          <img src="assets/images/pages/littleleague/design-page.png" alt="Youth Sports Design Page">
-        </div>
-
-
-        <h6>Handling of different parts of the platform (fundraising vs. e-commerce)</h6>
-        <p>
-          Our current site had been our only site up to this project, so we had to figure out first how to handle the new site since we needed the current one to stay live, and we couldn't piggy back on the old system because that's what we moving away from. Second, we had to decide what to do with the fundraising piece, since it was a seperate entity, under the umbrella of the company.
-        </p>
-        <p>
-          After a few tries we landed on segmenting into subdomains "powered by" the umbrella. Each new piece we built would get its own subdomain, and would remain branded while allowing for some autonomy in the look and handling of each. This allowed us to keep the site segmented for a future migration, and afforded the user way less confusion by omitting cross-references to the other pieces.
-        </p>
-        <div class="project-image">
-          <img src="assets/images/pages/littleleague/fundraising_desk.jpg" alt="Fundraising Homepage">
-        </div>
-
-        <div class="project-image">
-          <img src="assets/images/pages/littleleague/ys_homepage.jpg" alt="Youth Sports Homepage">
-        </div>
-
-        <!-- <h5 class="quotable"><i class="fas fa-quote-left" aria-hidden="true"></i>
-
-        <i class="fas fa-quote-right" aria-hidden="true"></i></h5> -->
-
-        <h4>Afterword:</h4>
-        <p>We released the 2 sites (e-commerce and fundraising), cohesive in branding, processes, and interactions. We built a simple system that separated each piece of data, making an easily maintainable platform. One thing we lacked in this project due to time constraints was a great level of external user research prior to release. Instead, we did all company-wide showcases along the way and iterated from this feedback as we went so we could continue moving forward. Not surprisingly, the customer service team provided very valuable feedback as they were our ear to the streets.
-        </p>
 
         <h6 class="project-link"><a href="https://youthsports.prepsportswear.com" target="_blank">VISIT PROJECT</a>
         </h6>
