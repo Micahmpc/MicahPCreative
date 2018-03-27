@@ -17,7 +17,17 @@
   text-transform: uppercase;
 }
 
+.marg-top-reset {
+  margin-top: 70px !important;
+}
 
+.marg-top100 {
+  margin-top: 100px !important;
+}
+
+.marg-top30 {
+  margin-top: 30px !important;
+}
 
 /* STRUCTURE */
 .project-sect {
@@ -74,6 +84,8 @@
 
 .content-break img {
   max-width: 100%;
+  display: block;
+  margin: 0 auto;
 }
 
 #littleleaguepage .callout-cell .left {
@@ -131,9 +143,110 @@
   padding: 0 30px;
 }
 
+
+body#aetlas .project-sect p, body#aetlas .project-sect h4, body#aetlas .project-sect h5 {
+  color: #0E343A;
+}
+
+#aetlas .project-link a {
+  color: #00C19C;
+  padding: 0;
+}
+
+#aetlas .project-link a:hover {
+  color: #999999;
+  transition: .125s ease-out;
+}
+
+.project-link a i {
+  padding-right: 15px;
+}
+
+#aetlas .persona-cell {
+  width: 100%;
+  text-align: center;
+}
+
+#aetlas .persona-cell img {
+  margin-top: 70px;
+  width: 170px;
+  height: auto;
+  border-radius: 50%;
+  text-align: center
+}
+
+#aetlas .aetlas {
+  width: 100%;
+  height: 146px;
+  background: rgba(14,52,58,1); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(14,52,58,1) 50%, rgba(0,193,156,1) 100%);
+  background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%,rgba(14,52,58,1) 50%,rgba(0,193,156,1) 100%);
+  background: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(14,52,58,1) 50%,rgba(0,193,156,1) 100%);
+}
+
+#aetlas .aetlas img {
+  position: relative;
+  top: -20px;
+}
+
+#aetlas .content-break .scroll-svg {
+  width:100%;
+  max-width: 1400px !important;
+  margin: 0 auto;
+  height: 150px;
+  overflow-y: scroll;
+}
+
+#aetlas .content-break .scroll-svg::-webkit-scrollbar {
+  width:10px;
+}
+
+#aetlas .content-break .scroll-svg::-webkit-scrollbar-track {
+  background: #cdcdcd;
+    border-radius: 5px;
+}
+
+#aetlas .content-break .scroll-svg::-webkit-scrollbar-thumb {
+  background: #0E343A;
+  border-radius: 5px;
+}
+
+#aetlas .branding img {
+  text-align: center;
+  margin: 30px auto 0;
+  max-width: 100%;
+}
+
+#aetlas .live-prototype img {
+  width: 100%;
+}
+
+section.content-break .project-sect {
+  margin: 70px 30px;
+  padding: 70px 0;
+}
+
 section.content .project-sect h5 {
   margin: 10px auto !important;
 }
+
+.content-break .project-sect table {
+  text-align: left;
+  width: 100%;
+}
+
+.content-break .project-sect tr.stat-amt td {
+  color: #fff;
+  font-size: 3.25rem;
+  font-weight: 600;
+}
+
+.content-break .project-sect tr.stat-desc td p {
+  max-width: 80%;
+  line-height:
+}
+
+
 
 
 .portfolio_content section.content.aboutmepage h6:last-of-type {
@@ -393,7 +506,7 @@ a .last-proj h6, a .next-proj h6 {
 
 a .last-proj p, a .next-proj p {
   font-size: .8rem;
-  color: #b4b4b4;
+  color: #b4b4b4 !important;
   padding-top: 5px;
 }
 
@@ -417,6 +530,12 @@ a .next-proj {
   }
 
 /* PORTFOLIO */
+
+section.content-break .project-sect {
+  max-width: 840px;
+  margin: 0 auto;
+  padding: 70px 30px;
+}
 
 .oneup-img img {
   margin-top: 60px;
@@ -448,6 +567,57 @@ a .next-proj {
 
 #littleleaguepage .marg-bottom150 {
   margin-bottom: 150px;
+}
+
+#aetlas .persona-cell {
+  display: inline-flex;
+}
+
+#aetlas .persona-info {
+  display: inline-block;
+  padding-left: 70px;
+  vertical-align: top;
+  margin-top: 70px;
+}
+
+#aetlas .persona-cell img {
+  margin-top: 70px;
+  width: 230px;
+}
+
+#aetlas .content-break .scroll-svg {
+  height: 200px;
+  padding: 30px;
+}
+
+#aetlas .aetlas {
+  width: 100%;
+  height: 540px;
+}
+
+#aetlas .aetlas img {
+  position: relative;
+  top: -80px;
+}
+
+#aetlas .branding img {
+  text-align: center;
+  margin-top: 30px;
+}
+
+#aetlas .branding .foldup img:last-child {
+  float: right;
+}
+
+#aetlas .project-sect .live-prototype {
+   margin-top: 70px;
+   text-align: center;
+   width: 100%;
+}
+
+#aetlas .project-sect .live-prototype iframe {
+   width:428px;
+   height:866px;
 }
 
 .portfolio_content section.aboutmepage {
