@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta charset="UTF-8">
     <title>Micah Parker - UX | UI | Visual | Development | Branding</title>
-    <link href="https://fonts.googleapis.com/css?family=Kanit:200,300,400,400i,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kanit:200,300,300i,400,400i,600" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link href="css/fontawesome-all.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -23,7 +23,7 @@
       <ul class="menulist">
         <li><a class="menuitems" href="index.html"><img src="assets/images/homepage/mp-logo.svg" alt=""></a></li>
         <li><a class="menuitems" href="about.html">ABOUT</a></li>
-        <li><a class="menuitems" href="index.html#work">PORTFOLIO</a></li>
+        <li><a class="menuitems" href="index.html#portfolio">PORTFOLIO</a></li>
         <li><a class="menuitems" target="_blank" href="assets/images/pages/resume/micahparker_designer.pdf">RESUME</a></li>
 
       </ul>
@@ -41,18 +41,9 @@
           <p>Visual Design | Email Development | Brand Marketing</p>
         </div>
       </section>
-      <!-- <div id="sec1" class="page-nav-block">
-        <div class="page-nav">
-          <a href="#sec1">Background</a>
-          <p>|</p>
-          <a href="#sec2">Challenges</a>
-          <p>|</p>
-          <a href="#sec3">Process</a>
-          <p>|</p>
-          <a href="#sec4">Study</a>
-        </div>
-      </div> -->
+
       <section class="content">
+        <div class="project-sect">
         <h4>A Rules of Engagement</h4>
         <p>How does one improve the effectiveness of communication as a brand?</p>
 
@@ -61,7 +52,7 @@
 
         <p>As mentioned before, the paradigm had shifted for email to mobile users being the biggest group. The emails we had been using were 90% desktop only, meaning on 90% of our emails when the user opened them on their mobile device, the same content that one would see on their computer was shrunk to a fraction of the size rendering it virtually impossible to read. The branding was another thing I wanted to address, after noticing that our marketing emails had a different branded look than our triggered/transactional emails, and sometimes weren't even consistent with other marketing emails. I went with my director through all the current emails and templates we actively used, and came up with a few key points we needed to address.</p>
 
-        <ul>
+        <ul class="marg-top-reset">
           <li>Optimize for responsive layouts, and viewing across device types</li>
           <li>Ensure proper functionality across ALL email clients.</li>
           <li>Improve branding across all emails to create cohesion.</li>
@@ -70,23 +61,25 @@
           <li>Dynamic tile technology</li>
         </ul>
 
+        <div class="divider"></div>
+
         <h4>The Bullet Points</h4>
-        <h6>Optimize for cross-device functionality</h6>
+        <p class="txt600">Optimize for cross-device functionality</p>
         <p>This one was pretty straightforward. Build the emails in a such a way that they can be viewed on any device, and will look good, and correct. This alone likely was the largest contributor to success in this project. Seems logical enough, but with other more pressing company initiatives going on, things like "building emails for mobile" can fall low on the list of must-haves. The effect of email on sales though is another story. More on this later.</p>
 
         <div class="device-mockup">
           <img src="assets/images/pages/prepemails/marketing_v1.png" alt="Template Uno">
         </div>
 
-        <h6>Ensure proper functionality across ALL email clients</h6>
+        <p class="txt600">Ensure proper functionality across ALL email clients</p>
         <p>The average person probably never thinks about the difference between Gmail, Yahoo Mail, and Outlook (among others).  Web browsers, for example, vary slightly in their handling of certain elements of code, but overall can be accounted for by using conventions like '-webkit'. Email on the other hand never saw the benefits of much standardization. Each client with a different set of quirks or rules that they decided would or would not work. This makes styling email templates a total pain in the butt.</p>
         <p>Before releasing a template, it had to go through several rounds of testing. First me as the developer, then passed out to another designer, our creative director, and our email marketing manager. The three of us forming the Musketeers of Prep Emails. The point here being that we can't assume a user is going to play by the rules of using the more popular email clients only, as many of our users were adults/parents ages 35-55 (while they may have been tech-savvy enough for the latest and greatest, soccer camp can take priority over a new version of Microsoft Outlook.). We did end up having to compromise on a few outlier versions like Outlook 2008, but it was well into the 20-teens, so too bad. The monetary worth of those customers was not enough to outway other sacrifices that would accommodate.</p>
 
-        <h6>Creating Cohesion through branding</h6>
+        <p class="txt600 marg-top-reset">Creating Cohesion through branding</p>
         <p>Prep's strategy relied heavily on the amount of content and included users. Which meant much of the focus was on scoring new customers but lacked in the area of retention. One of the contributors here in my mind was email. Prior, we had a bunch of emails that didn't look alike and didn't sell our product very well. They were largely text-based with a few static images of potential products to buy, but not necessarily catering to the individual. The result? Very low click-through and conversion rates, high unsubscribe rates, and occasionally being filtered to spam.</p>
         <p>One of the main focuses throughout the design of all the templates was making sure that the static elements had a branded look that created familiarity with Prep Sportswear. Even down to the details, we decided we even needed to standardize our email titles, so we begin the building/interactions of our relationship with the customer before they ever open the emails. That familiarity would hopefully result in higher open and click-through rates.</p>
 
-        <h6>Building specialized templates and increasing engagement</h6>
+        <p class="txt600 marg-top-reset">Building specialized templates and increasing engagement</p>
         <p>We decided the perfect number of templates for the marketing emails was 3. The first was product-centric. The point was to highlight a handful of products (usually linked to a current promotion) that the user could click-through right to the design page of the website (the final step before cart). This was really meant as our "product-dump" template that let our user essentially shop within the email for a number of generic high-selling items and designs.</p>
         <p>The second template was geared more toward a generic company email that used high-definition imagery in big bold blocks, that drove customers into the website with dazzling backgrounds and a glimpse into their future if they wore our product. This of course was inspired by many of the large players in the recreation/sports spaces like Adidas, The Clymb, and Fanatics.</p>
         <div class="device-mockup">
@@ -100,17 +93,21 @@
           <img src="assets/images/pages/prepemails/marketing_v3.png" alt="Template Tres">
         </div>
 
-        <h6 class="h6-rm-lastof">The fun part - NEW TECHNOLOGY!</h6>
+        <p class="txt600">The fun part - NEW TECHNOLOGY!</p>
         <p>I absolutely love trying to create new technology. So the latter 2 templates were built forward-thinking, with a new approach that was not yet developed. We had created events to work with Responsys and our website, that would take the individual customers preferences and info (favorite stores, name, etc.), and allow us to provide nothing but a URL with dynamic selectors to give each customer their own custom email (out of batches in the 10's of thousands). In other words, we put a URL we had created into Responsys, and when the user got it, that link - usually an image - would show a product from their favorite store. This was all fine and good. But not enough for me.</p>
         <p>Within the URL, there was a legacy piece that didn't work really regarding scale. In fact, you could omit it completely and it wouldn't change anything. The problem though was that it only showed the full image, which was a product shot from the website, of a product in full, at a 3/4 angle. To make the designs really pop and look up to snuff with the new athletic standard of cool imagery in their content, we needed to be able to crop the images to fit better with the surrounding content and not just floating around on top of it.</p>
         <p>I worked out a minimum-viable-product with our wiz software engineer (a former Navy Seal engineer, turned software engineer). I decided on how we wanted to administer the crop function, within the bounds of the URL. There needed to be two dimensions, vertical and horizontal, and a third dimension for scale. The vertical would be administered as a percentage of height from zero (top of the product shot referenced), the horizontal as a percentage from the middle out, and the scale, which would zoom in or out accordingly. Then my spy friend went into our repository and made those things happen. A URL based crop and zoom, simple enough that any new employee or designer working on emails could edit a product shot on the fly, functionally removing the designer from this part of the equation, and putting it rightfully into the hands of the email team to customize the templates without needing our help.</p>
 
-        <h5 class="quotable"><i class="fas fa-quote-left" aria-hidden="true"></i>...simple enough that any new employee or designer working on emails could edit a product shot on the fly, functionally removing the designer from this part of the equation...<i class="fas fa-quote-right" aria-hidden="true"></i></h5>
+        <h5 class="quotable marg-top-reset"><i class="fas fa-quote-left" aria-hidden="true"></i>...simple enough that any new employee or designer working on emails could edit a product shot on the fly, functionally removing the designer from this part of the equation...<i class="fas fa-quote-right" aria-hidden="true"></i></h5>
+
+        <div class="divider"></div>
 
         <h4>The Aftermath</h4>
         <p>Numbers sky-rocketed. Before releasing the whole set and figuring out our new technology we were building, we release the first email template. Open rates went up due to lack of Spam filtering. Click-through rates skyrocketed from their previous average, and conversion rates crept up, and bounce rates dropped. Most of this is simply due to the most basic improvement of making them responsive. But all the numbers held up with future sends and were back in line with industry averages or higher, and prompted the redoing of the triggered emails as well. A project I would start before handing off, as I moved on to build the front-end of the new website. The technology we had built, we were also able to apply to the platform of both the current website and the one we were beginning to build.</p>
         <p>The other half of this project that goes fairly unseen actually, is that what it really also gave us was a better process through standardization. The design team no longer had to constantly update email code, or create assets on assets for a single email. When they did, they had a style guide to work of off to answer any questions. And everything was put in the hands of the email team, with the exception of custom hero image creation. It ended up saving all teams involved a lot of headaches, took out a lot of the need for communication and requests between busy teams, and, well, they looked a lot cooler.</p>
+        </div>
 
+        <div class="divider"></div>
       </section>
 
       <div class="next-proj-block">
@@ -119,14 +116,14 @@
             <div class="last-proj">
               <h6><i class="fas fa-backward" style="padding-right: 5px;"></i></h6>
               <h3>Prep Sportswear</h3>
-              <p>design architecture | ux | ui developement</p>
+              <p>design architecture | ui developement | visual design</p>
               </div>
           </a>
-          <a href="sweetmeeting.html">
+          <a href="index.html">
             <div class="next-proj">
               <h6><i class="fas fa-forward" style="padding-left: 5px;"></i></h6>
-              <h3>Sweet Meeting</h3>
-              <p>ui development | architecture & process creation | ux</p>
+              <h3>Homepage</h3>
+              <p>return to homepage</p>
             </div>
           </a>
         </div>
@@ -163,11 +160,10 @@
       </div>
     </section>
   </div>
-    <footer>
-      <h6>© Copyright Micah Parker 2017. All Rights Reserved</h6>
-      <img src="assets/images/homepage/mp-logo.svg" alt="@micahmpc">
-    </footer>
-  </div>
+  <footer>
+    <img src="assets/images/homepage/mp-logo.svg" alt="@micahmpc"><h6>© Copyright Micah Parker 2017. All Rights Reserved</h6>
+  </footer>
+</div>
 
 
   <script src="scripts/projects.js"></script>
